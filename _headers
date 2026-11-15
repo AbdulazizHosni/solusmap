@@ -1,0 +1,7 @@
+/data/*
+  Cache-Control: public, max-age=604800
+  Access-Control-Allow-Origin: *
+/assets/*
+  Cache-Control: public, max-age=604800
+/*
+  X-Content-Type-Options: nosniff

@@ -1,0 +1,29 @@
+{
+ "bounds": [
+  137.12886931,
+  -5.83002553,
+  137.73780037,
+  -4.38819616
+ ],
+ "size_px": [
+  1723,
+  4096
+ ],
+ "cell_m": 20.865,
+ "dem_id": "ctx_66",
+ "source": "MRO CTX DEM 18 m, set 66 (p16_007356_1749_xi_05s222w_p18_008147_1749_xn_05s222w_tied-dem.tif), Day et al. 2023 (doi:10.17189/ervc-mr85)",
+ "downsampled": true,
+ "native_res_m": 18,
+ "legend": [
+  {
+   "label": "shaded relief (illumination from the north-west, 45\u00b0 above the horizon)",
+   "rgba": [
+    128,
+    128,
+    128,
+    255
+   ]
+  }
+ ],
+ "note": "display only; never use for calculations. Hillshade of the DEM averaged to 18 m cells (cells with under 50 % valid pixels are transparent)."
+}

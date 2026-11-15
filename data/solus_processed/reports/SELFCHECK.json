@@ -1,0 +1,357 @@
+{
+ "slope_vs_gdaldem": [
+  {
+   "dem_id": "ctx_608",
+   "baseline_m": 18,
+   "window_xoff_yoff_w_h": [
+    300,
+    2000,
+    1500,
+    1500
+   ],
+   "pixels_compared": 2132532,
+   "max_abs_diff_deg": 0.00653,
+   "mean_abs_diff_deg": 0.002509,
+   "nodata_masks_identical": true,
+   "tolerance_deg": 0.02,
+   "pass": true
+  },
+  {
+   "dem_id": "hirise_1159",
+   "baseline_m": 5,
+   "window_xoff_yoff_w_h": [
+    2000,
+    4000,
+    2500,
+    2500
+   ],
+   "pixels_compared": 234351,
+   "max_abs_diff_deg": 0.00695,
+   "mean_abs_diff_deg": 0.002525,
+   "nodata_masks_identical": true,
+   "tolerance_deg": 0.02,
+   "pass": true
+  },
+  {
+   "dem_id": "hirise_376",
+   "baseline_m": 5,
+   "window_xoff_yoff_w_h": [
+    3000,
+    9000,
+    2500,
+    2500
+   ],
+   "pixels_compared": 234573,
+   "max_abs_diff_deg": 0.00566,
+   "mean_abs_diff_deg": 0.002507,
+   "nodata_masks_identical": true,
+   "tolerance_deg": 0.02,
+   "pass": true
+  }
+ ],
+ "tiles_vs_raw_dem": [
+  {
+   "region": "west_candor",
+   "dem_id": "hirise_376",
+   "tile": "1_0",
+   "slope_baseline_m": 5,
+   "nominal_res_m": 5.0,
+   "cells_checked": 120,
+   "valid_cells": 106,
+   "cells_with_slope": 79,
+   "mismatches": {
+    "slope": 0,
+    "rough": 0,
+    "elev": 0,
+    "unknown": 0
+   },
+   "worst_slope_diff_deg": 0.0,
+   "worst_rough_diff_m": 0.0,
+   "pass": true
+  },
+  {
+   "region": "west_candor",
+   "dem_id": "hirise_482",
+   "tile": "0_8",
+   "slope_baseline_m": 5,
+   "nominal_res_m": 5.0,
+   "cells_checked": 120,
+   "valid_cells": 102,
+   "cells_with_slope": 99,
+   "mismatches": {
+    "slope": 0,
+    "rough": 0,
+    "elev": 0,
+    "unknown": 0
+   },
+   "worst_slope_diff_deg": 0.0,
+   "worst_rough_diff_m": 0.0,
+   "pass": true
+  },
+  {
+   "region": "gale",
+   "dem_id": "ctx_66",
+   "tile": "7_12",
+   "slope_baseline_m": 18,
+   "nominal_res_m": 18.0,
+   "cells_checked": 120,
+   "valid_cells": 95,
+   "cells_with_slope": 82,
+   "mismatches": {
+    "slope": 0,
+    "rough": 0,
+    "elev": 0,
+    "unknown": 0
+   },
+   "worst_slope_diff_deg": 0.0,
+   "worst_rough_diff_m": 0.0,
+   "pass": true
+  }
+ ],
+ "hazard_points": {
+  "jezero": {
+   "total": 16170,
+   "by_type": {
+    "steep_slope": 5404,
+    "rough_terrain": 3798,
+    "relief": 5608,
+    "data_gap": 1152,
+    "crater_rim": 208
+   },
+   "checked": 14810,
+   "on_nodata": 0,
+   "value_mismatch": 0,
+   "below_floor": 0,
+   "duplicate_cell": 0,
+   "cell_id_mismatch": 0,
+   "level_mismatch": 0,
+   "severity_mismatch": 0,
+   "baseline_mismatch": 0,
+   "better_source_has_value": 0,
+   "cells_sampled": 120,
+   "cell_max_mismatch": 0,
+   "point_not_at_cell_centre": 0,
+   "rounded_point_in_neighbouring_cell": 1,
+   "measured_craters": 13,
+   "measured_crater_centres_on_valid_data": 12,
+   "pass": true
+  },
+  "gale": {
+   "total": 9967,
+   "by_type": {
+    "steep_slope": 3263,
+    "rough_terrain": 2647,
+    "relief": 3247,
+    "data_gap": 600,
+    "crater_rim": 210
+   },
+   "checked": 9157,
+   "on_nodata": 0,
+   "value_mismatch": 0,
+   "below_floor": 0,
+   "duplicate_cell": 0,
+   "cell_id_mismatch": 0,
+   "level_mismatch": 0,
+   "severity_mismatch": 0,
+   "baseline_mismatch": 0,
+   "better_source_has_value": 0,
+   "cells_sampled": 120,
+   "cell_max_mismatch": 0,
+   "point_not_at_cell_centre": 0,
+   "rounded_point_in_neighbouring_cell": 1,
+   "measured_craters": 6,
+   "measured_crater_centres_on_valid_data": 5,
+   "pass": true
+  },
+  "west_candor": {
+   "total": 14750,
+   "by_type": {
+    "steep_slope": 4575,
+    "rough_terrain": 4248,
+    "relief": 4561,
+    "data_gap": 1200,
+    "crater_rim": 166
+   },
+   "checked": 13384,
+   "on_nodata": 0,
+   "value_mismatch": 0,
+   "below_floor": 0,
+   "duplicate_cell": 0,
+   "cell_id_mismatch": 0,
+   "level_mismatch": 0,
+   "severity_mismatch": 0,
+   "baseline_mismatch": 0,
+   "better_source_has_value": 0,
+   "cells_sampled": 120,
+   "cell_max_mismatch": 0,
+   "point_not_at_cell_centre": 0,
+   "rounded_point_in_neighbouring_cell": 0,
+   "measured_craters": 7,
+   "measured_crater_centres_on_valid_data": 6,
+   "pass": true
+  }
+ },
+ "geojson": [
+  {
+   "file": "regions/gale/craters.geojson",
+   "features": 210,
+   "geometry_types": {
+    "Point": 210
+   },
+   "bytes": 55102,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/gale/footprints.geojson",
+   "features": 4,
+   "geometry_types": {
+    "Polygon": 4
+   },
+   "bytes": 112691,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/gale/geology.geojson",
+   "features": 6,
+   "geometry_types": {
+    "Polygon": 5,
+    "MultiPolygon": 1
+   },
+   "bytes": 13296,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/gale/hazards.geojson",
+   "features": 9967,
+   "geometry_types": {
+    "Point": 9967
+   },
+   "bytes": 11046016,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/gale/traverse.geojson",
+   "features": 1,
+   "geometry_types": {
+    "MultiLineString": 1
+   },
+   "bytes": 42380,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/jezero/craters.geojson",
+   "features": 208,
+   "geometry_types": {
+    "Point": 208
+   },
+   "bytes": 60234,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/jezero/footprints.geojson",
+   "features": 8,
+   "geometry_types": {
+    "Polygon": 7,
+    "MultiPolygon": 1
+   },
+   "bytes": 184831,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/jezero/geology.geojson",
+   "features": 7,
+   "geometry_types": {
+    "Polygon": 6,
+    "MultiPolygon": 1
+   },
+   "bytes": 15598,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/jezero/hazards.geojson",
+   "features": 16170,
+   "geometry_types": {
+    "Point": 16170
+   },
+   "bytes": 17890108,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/jezero/traverse.geojson",
+   "features": 1,
+   "geometry_types": {
+    "MultiLineString": 1
+   },
+   "bytes": 34181,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/west_candor/craters.geojson",
+   "features": 166,
+   "geometry_types": {
+    "Point": 166
+   },
+   "bytes": 43971,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/west_candor/footprints.geojson",
+   "features": 8,
+   "geometry_types": {
+    "Polygon": 5,
+    "MultiPolygon": 3
+   },
+   "bytes": 182664,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/west_candor/geology.geojson",
+   "features": 15,
+   "geometry_types": {
+    "Polygon": 13,
+    "MultiPolygon": 2
+   },
+   "bytes": 58220,
+   "problems": [],
+   "pass": true
+  },
+  {
+   "file": "regions/west_candor/hazards.geojson",
+   "features": 14750,
+   "geometry_types": {
+    "Point": 14750
+   },
+   "bytes": 16511859,
+   "problems": [],
+   "pass": true
+  }
+ ],
+ "tile_files": {
+  "dems": 20,
+  "tiles": 1911,
+  "problems": [],
+  "pass": true
+ },
+ "overlays": {
+  "png": 80,
+  "problems": [],
+  "pass": true
+ },
+ "manifest": {
+  "limitations": 15,
+  "problems": [],
+  "pass": true
+ }
+}

@@ -1,0 +1,1509 @@
+{
+ "region": "jezero",
+ "generated_by": "code/03_validation.py",
+ "thresholds_deg": [
+  5,
+  10,
+  15,
+  20,
+  25,
+  30
+ ],
+ "hirise_vs_ctx_slope_18m_baseline": {
+  "method": "HiRISE DEM area-averaged onto the paired CTX grid (GDAL 'average'; cells with <99.9 % valid HiRISE pixels are NoData), Horn 3x3 at 18 m, compared cell by cell with CTX Horn slope",
+  "pairs": [
+   {
+    "hirise": "hirise_1118",
+    "ctx": "ctx_1118",
+    "set_id": 1118,
+    "cells_compared": 160316,
+    "area_km2": 51.94,
+    "median_hirise18_deg": 9.5,
+    "median_ctx_deg": 9.03,
+    "p95_hirise18_deg": 20.33,
+    "p95_ctx_deg": 24.17,
+    "median_hirise_1m_mean_in_cell_deg": 10.61,
+    "diff_hirise18_minus_ctx_deg": {
+     "median": 0.03,
+     "mean": -0.55,
+     "mad": 2.36,
+     "rmse": 6.3,
+     "p5": -9.4,
+     "p95": 7.12,
+     "pct_within_2deg": 44.1,
+     "pct_within_5deg": 77.6
+    },
+    "pearson_r": 0.602,
+    "excluding_ctx_suspect": {
+     "cells": 160244,
+     "median": 0.03,
+     "rmse": 6.24
+    },
+    "class_agreement_pct": {
+     "10": 79.5,
+     "15": 83.5,
+     "20": 90.3,
+     "25": 95.2,
+     "30": 97.5
+    }
+   },
+   {
+    "hirise": "hirise_1159",
+    "ctx": "ctx_1159",
+    "set_id": 1159,
+    "cells_compared": 102783,
+    "area_km2": 33.3,
+    "median_hirise18_deg": 5.82,
+    "median_ctx_deg": 5.2,
+    "p95_hirise18_deg": 16.65,
+    "p95_ctx_deg": 16.53,
+    "median_hirise_1m_mean_in_cell_deg": 6.82,
+    "diff_hirise18_minus_ctx_deg": {
+     "median": 0.42,
+     "mean": 0.47,
+     "mad": 1.77,
+     "rmse": 3.65,
+     "p5": -4.85,
+     "p95": 6.15,
+     "pct_within_2deg": 54.5,
+     "pct_within_5deg": 87.3
+    },
+    "pearson_r": 0.725,
+    "excluding_ctx_suspect": {
+     "cells": 102783,
+     "median": 0.42,
+     "rmse": 3.65
+    },
+    "class_agreement_pct": {
+     "10": 87.8,
+     "15": 94.1,
+     "20": 97.4,
+     "25": 98.9,
+     "30": 99.6
+    }
+   },
+   {
+    "hirise": "hirise_1206",
+    "ctx": "ctx_1206",
+    "set_id": 1206,
+    "cells_compared": 182338,
+    "area_km2": 59.08,
+    "median_hirise18_deg": 5.37,
+    "median_ctx_deg": 4.54,
+    "p95_hirise18_deg": 14.0,
+    "p95_ctx_deg": 12.2,
+    "median_hirise_1m_mean_in_cell_deg": 6.37,
+    "diff_hirise18_minus_ctx_deg": {
+     "median": 0.55,
+     "mean": 0.81,
+     "mad": 1.84,
+     "rmse": 3.93,
+     "p5": -4.56,
+     "p95": 7.26,
+     "pct_within_2deg": 52.9,
+     "pct_within_5deg": 85.1
+    },
+    "pearson_r": 0.531,
+    "excluding_ctx_suspect": {
+     "cells": 182338,
+     "median": 0.55,
+     "rmse": 3.93
+    },
+    "class_agreement_pct": {
+     "10": 85.5,
+     "15": 95.3,
+     "20": 98.6,
+     "25": 99.6,
+     "30": 99.8
+    }
+   },
+   {
+    "hirise": "hirise_1228",
+    "ctx": "ctx_1228",
+    "set_id": 1228,
+    "cells_compared": 164074,
+    "area_km2": 53.16,
+    "median_hirise18_deg": 9.93,
+    "median_ctx_deg": 9.4,
+    "p95_hirise18_deg": 21.34,
+    "p95_ctx_deg": 23.81,
+    "median_hirise_1m_mean_in_cell_deg": 11.01,
+    "diff_hirise18_minus_ctx_deg": {
+     "median": 0.18,
+     "mean": -0.13,
+     "mad": 2.45,
+     "rmse": 5.71,
+     "p5": -8.87,
+     "p95": 7.78,
+     "pct_within_2deg": 42.5,
+     "pct_within_5deg": 76.5
+    },
+    "pearson_r": 0.63,
+    "excluding_ctx_suspect": {
+     "cells": 164057,
+     "median": 0.18,
+     "rmse": 5.7
+    },
+    "class_agreement_pct": {
+     "10": 79.7,
+     "15": 83.1,
+     "20": 89.5,
+     "25": 95.3,
+     "30": 98.0
+    }
+   }
+  ]
+ },
+ "rover_path": {
+  "rover": "Perseverance (Mars 2020)",
+  "source": "NASA/JPL MMGIS M20_traverse.json and M20_waypoints.json",
+  "continuous_paths_after_merging": 23,
+  "approved_thresholds": {
+   "rover": {
+    "caution_deg": 15,
+    "nogo_deg": 25,
+    "walkback_km": 10,
+    "sources": [
+     "M8",
+     "L4",
+     "L1",
+     "M4",
+     "W6",
+     "W7"
+    ]
+   },
+   "marswalk": {
+    "caution_deg": 15,
+    "nogo_deg": 20,
+    "walkback_km": 2,
+    "sources": [
+     "W3",
+     "W4",
+     "W1",
+     "W2",
+     "W5"
+    ]
+   }
+  },
+  "per_dem": [
+   {
+    "dem_id": "hirise_1206",
+    "baseline_m": 5,
+    "samples_in_extent": 550,
+    "samples_valid": 0
+   },
+   {
+    "dem_id": "hirise_1118",
+    "baseline_m": 5,
+    "samples_in_extent": 0,
+    "samples_valid": 0
+   },
+   {
+    "dem_id": "hirise_1228",
+    "camera": "HiRISE",
+    "res_m": 1,
+    "baseline_m": 5,
+    "sample_spacing_m": 5.0,
+    "traverse_length_km": 46.05,
+    "samples_in_extent": 4233,
+    "samples_valid": 2664,
+    "valid_length_km": 13.32,
+    "samples_on_suspect": 122,
+    "slope_along_traverse_deg": {
+     "n": 2664,
+     "median": 11.15,
+     "p95": 20.62,
+     "max": 81.24,
+     "pct_above_deg": {
+      "5": 82.55,
+      "10": 56.94,
+      "15": 22.33,
+      "20": 5.74,
+      "25": 2.59,
+      "30": 1.46
+     }
+    },
+    "classification_along_traverse": {
+     "rover": {
+      "ok": 77.67,
+      "caution": 19.74,
+      "nogo": 2.59
+     },
+     "marswalk": {
+      "ok": 77.67,
+      "caution": 16.59,
+      "nogo": 5.74
+     }
+    },
+    "slope_whole_dem_deg": {
+     "n": 2781570,
+     "median": 9.66,
+     "p95": 23.22,
+     "max": 86.95,
+     "pct_above_deg": {
+      "5": 79.99,
+      "10": 48.02,
+      "15": 23.7,
+      "20": 9.79,
+      "25": 3.43,
+      "30": 1.28
+     },
+     "classification": {
+      "rover": {
+       "ok": 76.3,
+       "caution": 20.27,
+       "nogo": 3.43
+      },
+      "marswalk": {
+       "ok": 76.3,
+       "caution": 13.91,
+       "nogo": 9.79
+      }
+     }
+    },
+    "roughness_along_traverse_m": {
+     "n": 13896,
+     "median": 0.04,
+     "p95": 0.22,
+     "max": 24.28
+    },
+    "roughness_whole_dem_m": {
+     "median": 0.04,
+     "p95": 0.34
+    },
+    "slope_along_traverse_1m_baseline_deg": {
+     "n": 14024,
+     "median": 11.43,
+     "p95": 24.31,
+     "max": 88.67,
+     "pct_above_deg": {
+      "5": 85.21,
+      "10": 58.86,
+      "15": 27.87,
+      "20": 10.25,
+      "25": 4.56,
+      "30": 2.67
+     },
+     "classification": {
+      "rover": {
+       "ok": 72.13,
+       "caution": 23.3,
+       "nogo": 4.56
+      },
+      "marswalk": {
+       "ok": 72.13,
+       "caution": 17.62,
+       "nogo": 10.25
+      }
+     }
+    },
+    "slope_along_traverse_18m_baseline_deg": {
+     "n": 617,
+     "median": 11.84,
+     "p95": 17.93,
+     "max": 23.42,
+     "pct_above_deg": {
+      "5": 82.17,
+      "10": 63.21,
+      "15": 20.75,
+      "20": 1.3,
+      "25": 0.0,
+      "30": 0.0
+     },
+     "classification": {
+      "rover": {
+       "ok": 79.25,
+       "caution": 20.75,
+       "nogo": 0.0
+      },
+      "marswalk": {
+       "ok": 79.25,
+       "caution": 19.45,
+       "nogo": 1.3
+      }
+     }
+    },
+    "dem_slope_vs_rover_tilt_at_waypoints": {
+     "5m": {
+      "n": 239,
+      "median_dem_slope": 12.94,
+      "median_rover_tilt": 11.57,
+      "median_diff": 1.29,
+      "p5_diff": -4.78,
+      "p95_diff": 10.04,
+      "max_dem_slope": 32.33,
+      "max_rover_tilt": 20.68,
+      "pct_waypoints_dem_slope_above_deg": {
+       "5": 86.2,
+       "10": 66.5,
+       "15": 31.8,
+       "20": 9.6,
+       "25": 3.8,
+       "30": 0.8
+      },
+      "pct_waypoints_rover_tilt_above_deg": {
+       "5": 83.3,
+       "10": 62.8,
+       "15": 21.3,
+       "20": 2.1,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "classification_dem_slope": {
+       "rover": {
+        "ok": 68.2,
+        "caution": 28.03,
+        "nogo": 3.77
+       },
+       "marswalk": {
+        "ok": 68.2,
+        "caution": 22.18,
+        "nogo": 9.62
+       }
+      },
+      "classification_rover_tilt": {
+       "rover": {
+        "ok": 78.66,
+        "caution": 21.34,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 78.66,
+        "caution": 19.25,
+        "nogo": 2.09
+       }
+      }
+     },
+     "1m": {
+      "n": 246,
+      "median_dem_slope": 13.58,
+      "median_rover_tilt": 11.48,
+      "median_diff": 1.49,
+      "p5_diff": -5.01,
+      "p95_diff": 16.77,
+      "max_dem_slope": 39.88,
+      "max_rover_tilt": 20.68,
+      "pct_waypoints_dem_slope_above_deg": {
+       "5": 89.4,
+       "10": 71.5,
+       "15": 38.6,
+       "20": 17.9,
+       "25": 7.3,
+       "30": 4.1
+      },
+      "pct_waypoints_rover_tilt_above_deg": {
+       "5": 83.7,
+       "10": 61.8,
+       "15": 20.7,
+       "20": 2.0,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "classification_dem_slope": {
+       "rover": {
+        "ok": 61.38,
+        "caution": 31.3,
+        "nogo": 7.32
+       },
+       "marswalk": {
+        "ok": 61.38,
+        "caution": 20.73,
+        "nogo": 17.89
+       }
+      },
+      "classification_rover_tilt": {
+       "rover": {
+        "ok": 79.27,
+        "caution": 20.73,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 79.27,
+        "caution": 18.7,
+        "nogo": 2.03
+       }
+      }
+     },
+     "18m": {
+      "n": 223,
+      "median_dem_slope": 13.43,
+      "median_rover_tilt": 12.06,
+      "median_diff": 0.62,
+      "p5_diff": -4.05,
+      "p95_diff": 6.63,
+      "max_dem_slope": 23.42,
+      "max_rover_tilt": 20.68,
+      "pct_waypoints_dem_slope_above_deg": {
+       "5": 87.4,
+       "10": 68.2,
+       "15": 37.7,
+       "20": 3.6,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "pct_waypoints_rover_tilt_above_deg": {
+       "5": 83.9,
+       "10": 64.6,
+       "15": 22.9,
+       "20": 2.2,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "classification_dem_slope": {
+       "rover": {
+        "ok": 62.33,
+        "caution": 37.67,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 62.33,
+        "caution": 34.08,
+        "nogo": 3.59
+       }
+      },
+      "classification_rover_tilt": {
+       "rover": {
+        "ok": 77.13,
+        "caution": 22.87,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 77.13,
+        "caution": 20.63,
+        "nogo": 2.24
+       }
+      }
+     }
+    }
+   },
+   {
+    "dem_id": "hirise_1159",
+    "camera": "HiRISE",
+    "res_m": 1,
+    "baseline_m": 5,
+    "sample_spacing_m": 5.0,
+    "traverse_length_km": 46.05,
+    "samples_in_extent": 2829,
+    "samples_valid": 2523,
+    "valid_length_km": 12.62,
+    "samples_on_suspect": 137,
+    "slope_along_traverse_deg": {
+     "n": 2523,
+     "median": 9.66,
+     "p95": 17.76,
+     "max": 37.57,
+     "pct_above_deg": {
+      "5": 83.35,
+      "10": 47.05,
+      "15": 13.12,
+      "20": 1.74,
+      "25": 0.2,
+      "30": 0.04
+     }
+    },
+    "classification_along_traverse": {
+     "rover": {
+      "ok": 86.88,
+      "caution": 12.92,
+      "nogo": 0.2
+     },
+     "marswalk": {
+      "ok": 86.88,
+      "caution": 11.38,
+      "nogo": 1.74
+     }
+    },
+    "slope_whole_dem_deg": {
+     "n": 1758792,
+     "median": 6.6,
+     "p95": 19.93,
+     "max": 84.9,
+     "pct_above_deg": {
+      "5": 64.03,
+      "10": 29.32,
+      "15": 12.74,
+      "20": 4.93,
+      "25": 1.76,
+      "30": 0.58
+     },
+     "classification": {
+      "rover": {
+       "ok": 87.26,
+       "caution": 10.98,
+       "nogo": 1.76
+      },
+      "marswalk": {
+       "ok": 87.26,
+       "caution": 7.81,
+       "nogo": 4.93
+      }
+     }
+    },
+    "roughness_along_traverse_m": {
+     "n": 13168,
+     "median": 0.04,
+     "p95": 0.25,
+     "max": 2.23
+    },
+    "roughness_whole_dem_m": {
+     "median": 0.03,
+     "p95": 0.39
+    },
+    "slope_along_traverse_1m_baseline_deg": {
+     "n": 13260,
+     "median": 10.35,
+     "p95": 23.8,
+     "max": 75.22,
+     "pct_above_deg": {
+      "5": 83.84,
+      "10": 52.42,
+      "15": 22.67,
+      "20": 8.81,
+      "25": 4.34,
+      "30": 2.65
+     },
+     "classification": {
+      "rover": {
+       "ok": 77.33,
+       "caution": 18.33,
+       "nogo": 4.34
+      },
+      "marswalk": {
+       "ok": 77.33,
+       "caution": 13.86,
+       "nogo": 8.81
+      }
+     }
+    },
+    "slope_along_traverse_18m_baseline_deg": {
+     "n": 556,
+     "median": 9.59,
+     "p95": 16.85,
+     "max": 21.28,
+     "pct_above_deg": {
+      "5": 83.63,
+      "10": 47.66,
+      "15": 9.35,
+      "20": 1.62,
+      "25": 0.0,
+      "30": 0.0
+     },
+     "classification": {
+      "rover": {
+       "ok": 90.65,
+       "caution": 9.35,
+       "nogo": 0.0
+      },
+      "marswalk": {
+       "ok": 90.65,
+       "caution": 7.73,
+       "nogo": 1.62
+      }
+     }
+    },
+    "dem_slope_vs_rover_tilt_at_waypoints": {
+     "5m": {
+      "n": 181,
+      "median_dem_slope": 9.91,
+      "median_rover_tilt": 11.09,
+      "median_diff": -1.05,
+      "p5_diff": -5.35,
+      "p95_diff": 4.69,
+      "max_dem_slope": 24.25,
+      "max_rover_tilt": 20.24,
+      "pct_waypoints_dem_slope_above_deg": {
+       "5": 83.4,
+       "10": 49.7,
+       "15": 14.9,
+       "20": 1.7,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "pct_waypoints_rover_tilt_above_deg": {
+       "5": 89.5,
+       "10": 60.2,
+       "15": 11.0,
+       "20": 0.6,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "classification_dem_slope": {
+       "rover": {
+        "ok": 85.08,
+        "caution": 14.92,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 85.08,
+        "caution": 13.26,
+        "nogo": 1.66
+       }
+      },
+      "classification_rover_tilt": {
+       "rover": {
+        "ok": 88.95,
+        "caution": 11.05,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 88.95,
+        "caution": 10.5,
+        "nogo": 0.55
+       }
+      }
+     },
+     "1m": {
+      "n": 190,
+      "median_dem_slope": 10.91,
+      "median_rover_tilt": 11.27,
+      "median_diff": -0.06,
+      "p5_diff": -5.68,
+      "p95_diff": 12.05,
+      "max_dem_slope": 62.31,
+      "max_rover_tilt": 20.68,
+      "pct_waypoints_dem_slope_above_deg": {
+       "5": 80.5,
+       "10": 53.2,
+       "15": 22.6,
+       "20": 9.5,
+       "25": 4.7,
+       "30": 3.7
+      },
+      "pct_waypoints_rover_tilt_above_deg": {
+       "5": 90.0,
+       "10": 62.1,
+       "15": 13.7,
+       "20": 1.6,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "classification_dem_slope": {
+       "rover": {
+        "ok": 77.37,
+        "caution": 17.89,
+        "nogo": 4.74
+       },
+       "marswalk": {
+        "ok": 77.37,
+        "caution": 13.16,
+        "nogo": 9.47
+       }
+      },
+      "classification_rover_tilt": {
+       "rover": {
+        "ok": 86.32,
+        "caution": 13.68,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 86.32,
+        "caution": 12.11,
+        "nogo": 1.58
+       }
+      }
+     },
+     "18m": {
+      "n": 160,
+      "median_dem_slope": 9.43,
+      "median_rover_tilt": 11.09,
+      "median_diff": -0.45,
+      "p5_diff": -4.75,
+      "p95_diff": 2.82,
+      "max_dem_slope": 20.47,
+      "max_rover_tilt": 20.24,
+      "pct_waypoints_dem_slope_above_deg": {
+       "5": 84.4,
+       "10": 46.2,
+       "15": 8.1,
+       "20": 1.2,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "pct_waypoints_rover_tilt_above_deg": {
+       "5": 89.4,
+       "10": 60.6,
+       "15": 9.4,
+       "20": 0.6,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "classification_dem_slope": {
+       "rover": {
+        "ok": 91.88,
+        "caution": 8.12,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 91.88,
+        "caution": 6.88,
+        "nogo": 1.25
+       }
+      },
+      "classification_rover_tilt": {
+       "rover": {
+        "ok": 90.62,
+        "caution": 9.38,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 90.62,
+        "caution": 8.75,
+        "nogo": 0.62
+       }
+      }
+     }
+    }
+   },
+   {
+    "dem_id": "ctx_1228",
+    "camera": "CTX",
+    "res_m": 18,
+    "baseline_m": 18,
+    "sample_spacing_m": 18.0,
+    "traverse_length_km": 46.05,
+    "samples_in_extent": 2572,
+    "samples_valid": 2572,
+    "valid_length_km": 46.3,
+    "samples_on_suspect": 0,
+    "slope_along_traverse_deg": {
+     "n": 2572,
+     "median": 4.86,
+     "p95": 17.36,
+     "max": 42.83,
+     "pct_above_deg": {
+      "5": 49.26,
+      "10": 27.76,
+      "15": 11.04,
+      "20": 2.72,
+      "25": 0.82,
+      "30": 0.27
+     }
+    },
+    "classification_along_traverse": {
+     "rover": {
+      "ok": 88.96,
+      "caution": 10.23,
+      "nogo": 0.82
+     },
+     "marswalk": {
+      "ok": 88.96,
+      "caution": 8.32,
+      "nogo": 2.72
+     }
+    },
+    "slope_whole_dem_deg": {
+     "n": 3820629,
+     "median": 4.23,
+     "p95": 16.66,
+     "max": 84.0,
+     "pct_above_deg": {
+      "5": 42.31,
+      "10": 15.43,
+      "15": 6.55,
+      "20": 2.98,
+      "25": 1.5,
+      "30": 0.83
+     },
+     "classification": {
+      "rover": {
+       "ok": 93.45,
+       "caution": 5.05,
+       "nogo": 1.5
+      },
+      "marswalk": {
+       "ok": 93.45,
+       "caution": 3.57,
+       "nogo": 2.98
+      }
+     }
+    },
+    "roughness_along_traverse_m": {
+     "n": 2572,
+     "median": 0.64,
+     "p95": 2.36,
+     "max": 6.72
+    },
+    "roughness_whole_dem_m": {
+     "median": 0.45,
+     "p95": 2.21
+    },
+    "dem_slope_vs_rover_tilt_at_waypoints": {
+     "18m": {
+      "n": 708,
+      "median_dem_slope": 5.94,
+      "median_rover_tilt": 7.03,
+      "median_diff": -0.49,
+      "p5_diff": -7.18,
+      "p95_diff": 9.87,
+      "max_dem_slope": 30.06,
+      "max_rover_tilt": 20.68,
+      "pct_waypoints_dem_slope_above_deg": {
+       "5": 54.0,
+       "10": 32.2,
+       "15": 11.9,
+       "20": 2.4,
+       "25": 0.1,
+       "30": 0.1
+      },
+      "pct_waypoints_rover_tilt_above_deg": {
+       "5": 61.0,
+       "10": 33.6,
+       "15": 8.5,
+       "20": 0.8,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "classification_dem_slope": {
+       "rover": {
+        "ok": 88.14,
+        "caution": 11.72,
+        "nogo": 0.14
+       },
+       "marswalk": {
+        "ok": 88.14,
+        "caution": 9.46,
+        "nogo": 2.4
+       }
+      },
+      "classification_rover_tilt": {
+       "rover": {
+        "ok": 91.53,
+        "caution": 8.47,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 91.53,
+        "caution": 7.63,
+        "nogo": 0.85
+       }
+      }
+     }
+    }
+   },
+   {
+    "dem_id": "ctx_1206",
+    "camera": "CTX",
+    "res_m": 18,
+    "baseline_m": 18,
+    "sample_spacing_m": 18.0,
+    "traverse_length_km": 46.05,
+    "samples_in_extent": 2572,
+    "samples_valid": 1861,
+    "valid_length_km": 33.5,
+    "samples_on_suspect": 0,
+    "slope_along_traverse_deg": {
+     "n": 1861,
+     "median": 6.35,
+     "p95": 21.09,
+     "max": 46.29,
+     "pct_above_deg": {
+      "5": 60.08,
+      "10": 30.79,
+      "15": 13.22,
+      "20": 5.7,
+      "25": 2.9,
+      "30": 1.29
+     }
+    },
+    "classification_along_traverse": {
+     "rover": {
+      "ok": 86.78,
+      "caution": 10.32,
+      "nogo": 2.9
+     },
+     "marswalk": {
+      "ok": 86.78,
+      "caution": 7.52,
+      "nogo": 5.7
+     }
+    },
+    "slope_whole_dem_deg": {
+     "n": 5065987,
+     "median": 4.3,
+     "p95": 16.26,
+     "max": 83.63,
+     "pct_above_deg": {
+      "5": 42.64,
+      "10": 14.55,
+      "15": 6.11,
+      "20": 2.88,
+      "25": 1.53,
+      "30": 0.89
+     },
+     "classification": {
+      "rover": {
+       "ok": 93.89,
+       "caution": 4.58,
+       "nogo": 1.53
+      },
+      "marswalk": {
+       "ok": 93.89,
+       "caution": 3.22,
+       "nogo": 2.88
+      }
+     }
+    },
+    "roughness_along_traverse_m": {
+     "n": 1850,
+     "median": 0.65,
+     "p95": 3.01,
+     "max": 8.18
+    },
+    "roughness_whole_dem_m": {
+     "median": 0.45,
+     "p95": 2.24
+    },
+    "dem_slope_vs_rover_tilt_at_waypoints": {
+     "18m": {
+      "n": 499,
+      "median_dem_slope": 7.84,
+      "median_rover_tilt": 8.82,
+      "median_diff": -0.46,
+      "p5_diff": -7.49,
+      "p95_diff": 13.6,
+      "max_dem_slope": 38.77,
+      "max_rover_tilt": 20.68,
+      "pct_waypoints_dem_slope_above_deg": {
+       "5": 65.5,
+       "10": 38.5,
+       "15": 20.0,
+       "20": 8.4,
+       "25": 5.0,
+       "30": 1.8
+      },
+      "pct_waypoints_rover_tilt_above_deg": {
+       "5": 74.3,
+       "10": 42.3,
+       "15": 10.6,
+       "20": 1.0,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "classification_dem_slope": {
+       "rover": {
+        "ok": 79.96,
+        "caution": 15.03,
+        "nogo": 5.01
+       },
+       "marswalk": {
+        "ok": 79.96,
+        "caution": 11.62,
+        "nogo": 8.42
+       }
+      },
+      "classification_rover_tilt": {
+       "rover": {
+        "ok": 89.38,
+        "caution": 10.62,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 89.38,
+        "caution": 9.62,
+        "nogo": 1.0
+       }
+      }
+     }
+    }
+   },
+   {
+    "dem_id": "ctx_1118",
+    "camera": "CTX",
+    "res_m": 18,
+    "baseline_m": 18,
+    "sample_spacing_m": 18.0,
+    "traverse_length_km": 46.05,
+    "samples_in_extent": 2572,
+    "samples_valid": 2562,
+    "valid_length_km": 46.12,
+    "samples_on_suspect": 0,
+    "slope_along_traverse_deg": {
+     "n": 2562,
+     "median": 5.43,
+     "p95": 17.55,
+     "max": 43.12,
+     "pct_above_deg": {
+      "5": 53.55,
+      "10": 29.74,
+      "15": 11.48,
+      "20": 2.69,
+      "25": 1.17,
+      "30": 0.27
+     }
+    },
+    "classification_along_traverse": {
+     "rover": {
+      "ok": 88.52,
+      "caution": 10.3,
+      "nogo": 1.17
+     },
+     "marswalk": {
+      "ok": 88.52,
+      "caution": 8.78,
+      "nogo": 2.69
+     }
+    },
+    "slope_whole_dem_deg": {
+     "n": 3617177,
+     "median": 4.42,
+     "p95": 18.91,
+     "max": 86.56,
+     "pct_above_deg": {
+      "5": 44.59,
+      "10": 18.35,
+      "15": 8.69,
+      "20": 4.31,
+      "25": 2.2,
+      "30": 1.23
+     },
+     "classification": {
+      "rover": {
+       "ok": 91.31,
+       "caution": 6.49,
+       "nogo": 2.2
+      },
+      "marswalk": {
+       "ok": 91.31,
+       "caution": 4.38,
+       "nogo": 4.31
+      }
+     }
+    },
+    "roughness_along_traverse_m": {
+     "n": 2554,
+     "median": 0.62,
+     "p95": 2.72,
+     "max": 10.1
+    },
+    "roughness_whole_dem_m": {
+     "median": 0.55,
+     "p95": 2.94
+    },
+    "dem_slope_vs_rover_tilt_at_waypoints": {
+     "18m": {
+      "n": 690,
+      "median_dem_slope": 6.21,
+      "median_rover_tilt": 7.17,
+      "median_diff": -0.34,
+      "p5_diff": -7.28,
+      "p95_diff": 9.79,
+      "max_dem_slope": 28.98,
+      "max_rover_tilt": 20.68,
+      "pct_waypoints_dem_slope_above_deg": {
+       "5": 58.0,
+       "10": 33.0,
+       "15": 14.1,
+       "20": 3.3,
+       "25": 1.3,
+       "30": 0.0
+      },
+      "pct_waypoints_rover_tilt_above_deg": {
+       "5": 62.6,
+       "10": 34.5,
+       "15": 8.7,
+       "20": 0.9,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "classification_dem_slope": {
+       "rover": {
+        "ok": 85.94,
+        "caution": 12.75,
+        "nogo": 1.3
+       },
+       "marswalk": {
+        "ok": 85.94,
+        "caution": 10.72,
+        "nogo": 3.33
+       }
+      },
+      "classification_rover_tilt": {
+       "rover": {
+        "ok": 91.3,
+        "caution": 8.7,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 91.3,
+        "caution": 7.83,
+        "nogo": 0.87
+       }
+      }
+     }
+    }
+   },
+   {
+    "dem_id": "ctx_1159",
+    "camera": "CTX",
+    "res_m": 18,
+    "baseline_m": 18,
+    "sample_spacing_m": 18.0,
+    "traverse_length_km": 46.05,
+    "samples_in_extent": 2572,
+    "samples_valid": 2569,
+    "valid_length_km": 46.24,
+    "samples_on_suspect": 0,
+    "slope_along_traverse_deg": {
+     "n": 2569,
+     "median": 6.05,
+     "p95": 19.51,
+     "max": 53.57,
+     "pct_above_deg": {
+      "5": 56.79,
+      "10": 31.49,
+      "15": 11.95,
+      "20": 4.52,
+      "25": 2.37,
+      "30": 1.28
+     }
+    },
+    "classification_along_traverse": {
+     "rover": {
+      "ok": 88.05,
+      "caution": 9.58,
+      "nogo": 2.37
+     },
+     "marswalk": {
+      "ok": 88.05,
+      "caution": 7.43,
+      "nogo": 4.52
+     }
+    },
+    "slope_whole_dem_deg": {
+     "n": 16583543,
+     "median": 4.48,
+     "p95": 18.59,
+     "max": 88.0,
+     "pct_above_deg": {
+      "5": 44.75,
+      "10": 16.69,
+      "15": 7.9,
+      "20": 4.23,
+      "25": 2.46,
+      "30": 1.53
+     },
+     "classification": {
+      "rover": {
+       "ok": 92.1,
+       "caution": 5.44,
+       "nogo": 2.46
+      },
+      "marswalk": {
+       "ok": 92.1,
+       "caution": 3.67,
+       "nogo": 4.23
+      }
+     }
+    },
+    "roughness_along_traverse_m": {
+     "n": 2567,
+     "median": 0.76,
+     "p95": 4.027,
+     "max": 14.25
+    },
+    "roughness_whole_dem_m": {
+     "median": 0.52,
+     "p95": 3.4
+    },
+    "dem_slope_vs_rover_tilt_at_waypoints": {
+     "18m": {
+      "n": 708,
+      "median_dem_slope": 7.01,
+      "median_rover_tilt": 7.03,
+      "median_diff": -0.3,
+      "p5_diff": -7.04,
+      "p95_diff": 12.12,
+      "max_dem_slope": 40.89,
+      "max_rover_tilt": 20.68,
+      "pct_waypoints_dem_slope_above_deg": {
+       "5": 59.6,
+       "10": 34.5,
+       "15": 14.3,
+       "20": 4.5,
+       "25": 1.8,
+       "30": 1.1
+      },
+      "pct_waypoints_rover_tilt_above_deg": {
+       "5": 61.0,
+       "10": 33.6,
+       "15": 8.5,
+       "20": 0.8,
+       "25": 0.0,
+       "30": 0.0
+      },
+      "classification_dem_slope": {
+       "rover": {
+        "ok": 85.73,
+        "caution": 12.43,
+        "nogo": 1.84
+       },
+       "marswalk": {
+        "ok": 85.73,
+        "caution": 9.75,
+        "nogo": 4.52
+       }
+      },
+      "classification_rover_tilt": {
+       "rover": {
+        "ok": 91.53,
+        "caution": 8.47,
+        "nogo": 0.0
+       },
+       "marswalk": {
+        "ok": 91.53,
+        "caution": 7.63,
+        "nogo": 0.85
+       }
+      }
+     }
+    }
+   }
+  ],
+  "rover_measured_tilt_deg": {
+   "n": 708,
+   "median": 7.03,
+   "p95": 16.62,
+   "max": 20.68,
+   "pct_above_deg": {
+    "5": 61.02,
+    "10": 33.62,
+    "15": 8.47,
+    "20": 0.85,
+    "25": 0.0,
+    "30": 0.0
+   },
+   "definition": "the 'tilt' field of the NASA/JPL waypoint file: rover body tilt measured on board at each waypoint (end of a drive)",
+   "sol_of_max": 1578,
+   "max_abs_pitch": 20.14,
+   "max_abs_roll": 18.77,
+   "classification": {
+    "rover": {
+     "ok": 91.53,
+     "caution": 8.47,
+     "nogo": 0.0
+    },
+    "marswalk": {
+     "ok": 91.53,
+     "caution": 7.63,
+     "nogo": 0.85
+    }
+   }
+  },
+  "figure": "reports/figures/traverse_slope_jezero.png",
+  "what_this_does_not_prove": [
+   "Rover drivers chose these paths to avoid hazards, so the path is a biased (easy) sample of the terrain.",
+   "Perseverance and Curiosity are ~1-tonne robotic rovers; a crewed rover has a different mass, wheelbase, speed and risk tolerance.",
+   "DEM slope at a 5 m or 18 m baseline is not the tilt the rover experienced; DEM noise raises slopes, most of all at short baselines.",
+   "Slope alone ignores soil strength: sand at low slope has stopped rovers."
+  ]
+ },
+ "contract_version": "1.1",
+ "approved_thresholds": {
+  "rover": {
+   "caution_deg": 15,
+   "nogo_deg": 25,
+   "walkback_km": 10,
+   "sources": [
+    "M8",
+    "L4",
+    "L1",
+    "M4",
+    "W6",
+    "W7"
+   ]
+  },
+  "marswalk": {
+   "caution_deg": 15,
+   "nogo_deg": 20,
+   "walkback_km": 2,
+   "sources": [
+    "W3",
+    "W4",
+    "W1",
+    "W2",
+    "W5"
+   ]
+  }
+ },
+ "hirise_slope_1m_vs_5m_baseline": {
+  "note": "1 m slope is kept here for comparison only; contract 1.1 uses the 5 m baseline for HiRISE everywhere else",
+  "dems": [
+   {
+    "dem_id": "hirise_1206",
+    "slope_1m_baseline_deg": {
+     "n": 68290099,
+     "p50": 5.94,
+     "p75": 9.88,
+     "p90": 15.64,
+     "p95": 21.24,
+     "p99": 42.23,
+     "max": 84.53
+    },
+    "slope_1m_pct_above_deg": {
+     "5": 58.61,
+     "10": 24.511,
+     "15": 10.973,
+     "20": 5.743,
+     "25": 3.432,
+     "30": 2.251,
+     "35": 1.575,
+     "40": 1.146,
+     "45": 0.848
+    },
+    "slope_5m_baseline_deg": {
+     "n": 2667210,
+     "p50": 5.55,
+     "p75": 8.82,
+     "p90": 13.12,
+     "p95": 16.77,
+     "p99": 27.12,
+     "max": 65.24
+    },
+    "slope_5m_pct_above_deg": {
+     "5": 55.498,
+     "10": 19.328,
+     "15": 6.934,
+     "20": 2.886,
+     "25": 1.343,
+     "30": 0.684,
+     "35": 0.348,
+     "40": 0.16,
+     "45": 0.066
+    },
+    "area_with_5m_slope_pct_of_valid_dem": 97.4
+   },
+   {
+    "dem_id": "hirise_1118",
+    "slope_1m_baseline_deg": {
+     "n": 67203020,
+     "p50": 10.48,
+     "p75": 15.85,
+     "p90": 22.05,
+     "p95": 27.2,
+     "p99": 45.94,
+     "max": 89.53
+    },
+    "slope_1m_pct_above_deg": {
+     "5": 82.523,
+     "10": 52.803,
+     "15": 28.088,
+     "20": 13.651,
+     "25": 6.587,
+     "30": 3.684,
+     "35": 2.322,
+     "40": 1.559,
+     "45": 1.073
+    },
+    "slope_5m_baseline_deg": {
+     "n": 2557079,
+     "p50": 9.77,
+     "p75": 14.28,
+     "p90": 18.9,
+     "p95": 21.51,
+     "p99": 27.09,
+     "max": 85.57
+    },
+    "slope_5m_pct_above_deg": {
+     "5": 80.483,
+     "10": 48.571,
+     "15": 21.997,
+     "20": 7.605,
+     "25": 1.762,
+     "30": 0.504,
+     "35": 0.179,
+     "40": 0.074,
+     "45": 0.041
+    },
+    "area_with_5m_slope_pct_of_valid_dem": 94.42
+   },
+   {
+    "dem_id": "hirise_1228",
+    "slope_1m_baseline_deg": {
+     "n": 74813903,
+     "p50": 10.47,
+     "p75": 16.34,
+     "p90": 23.78,
+     "p95": 30.85,
+     "p99": 54.96,
+     "max": 89.72
+    },
+    "slope_1m_pct_above_deg": {
+     "5": 82.203,
+     "10": 52.596,
+     "15": 29.486,
+     "20": 15.824,
+     "25": 8.721,
+     "30": 5.37,
+     "35": 3.668,
+     "40": 2.642,
+     "45": 1.936
+    },
+    "slope_5m_baseline_deg": {
+     "n": 2781570,
+     "p50": 9.66,
+     "p75": 14.65,
+     "p90": 19.89,
+     "p95": 23.22,
+     "p99": 31.38,
+     "max": 86.95
+    },
+    "slope_5m_pct_above_deg": {
+     "5": 79.993,
+     "10": 48.024,
+     "15": 23.701,
+     "20": 9.793,
+     "25": 3.428,
+     "30": 1.276,
+     "35": 0.562,
+     "40": 0.282,
+     "45": 0.18
+    },
+    "area_with_5m_slope_pct_of_valid_dem": 91.86
+   },
+   {
+    "dem_id": "hirise_1159",
+    "slope_1m_baseline_deg": {
+     "n": 48269348,
+     "p50": 7.57,
+     "p75": 13.43,
+     "p90": 22.16,
+     "p95": 31.2,
+     "p99": 55.7,
+     "max": 89.7
+    },
+    "slope_1m_pct_above_deg": {
+     "5": 69.012,
+     "10": 37.245,
+     "15": 20.872,
+     "20": 12.261,
+     "25": 7.833,
+     "30": 5.412,
+     "35": 3.946,
+     "40": 2.933,
+     "45": 2.17
+    },
+    "slope_5m_baseline_deg": {
+     "n": 1758792,
+     "p50": 6.6,
+     "p75": 11.04,
+     "p90": 16.3,
+     "p95": 19.93,
+     "p99": 27.52,
+     "max": 84.9
+    },
+    "slope_5m_pct_above_deg": {
+     "5": 64.028,
+     "10": 29.319,
+     "15": 12.741,
+     "20": 4.935,
+     "25": 1.759,
+     "30": 0.581,
+     "35": 0.205,
+     "40": 0.077,
+     "45": 0.04
+    },
+    "area_with_5m_slope_pct_of_valid_dem": 89.57
+   }
+  ]
+ }
+}

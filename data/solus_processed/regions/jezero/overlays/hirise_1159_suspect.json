@@ -1,0 +1,30 @@
+{
+ "bounds": [
+  77.17376882,
+  18.35809,
+  77.28625944,
+  18.53334637
+ ],
+ "size_px": [
+  2494,
+  4096
+ ],
+ "cell_m": 2.536,
+ "dem_id": "hirise_1159",
+ "source": "MRO HiRISE DEM 1 m, set 1159 (esp_058996_1985_esp_058930_1985_tied-dem.tif), Day et al. 2023 (doi:10.17189/ervc-mr85)",
+ "slope_baseline_m": 5,
+ "downsampled": true,
+ "native_res_m": 1,
+ "legend": [
+  {
+   "label": "suspect elevation (possible DEM artifact; flagged, not removed)",
+   "rgba": [
+    230,
+    0,
+    230,
+    170
+   ]
+  }
+ ],
+ "note": "display only. An overlay pixel is marked if any native pixel inside it failed the MOLA-consistency or the spike check (see reports/PROCESSING_REPORT.md)."
+}

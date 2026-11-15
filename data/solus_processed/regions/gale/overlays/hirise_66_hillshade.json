@@ -1,0 +1,30 @@
+{
+ "bounds": [
+  137.38144462,
+  -5.37745702,
+  137.50916443,
+  -5.01287248
+ ],
+ "size_px": [
+  1429,
+  4096
+ ],
+ "cell_m": 5.276,
+ "dem_id": "hirise_66",
+ "source": "MRO HiRISE DEM 1 m, set 66 (psp_007356_1750_psp_008147_1750_tied-dem.tif), Day et al. 2023 (doi:10.17189/ervc-mr85)",
+ "slope_baseline_m": 5,
+ "downsampled": true,
+ "native_res_m": 1,
+ "legend": [
+  {
+   "label": "shaded relief (illumination from the north-west, 45\u00b0 above the horizon)",
+   "rgba": [
+    128,
+    128,
+    128,
+    255
+   ]
+  }
+ ],
+ "note": "display only; never use for calculations. Hillshade of the DEM averaged to 5 m cells (cells with under 50 % valid pixels are transparent)."
+}

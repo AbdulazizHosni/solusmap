@@ -1,0 +1,401 @@
+{
+ "id": "gale",
+ "name": "Gale crater / Aeolis Mons (Mount Sharp)",
+ "search_bbox": [
+  135.0,
+  -7.0,
+  140.0,
+  -3.0
+ ],
+ "focus_bbox": [
+  137.0,
+  -5.4,
+  137.8,
+  -4.2
+ ],
+ "default_view": {
+  "center": [
+   137.4,
+   -4.8
+  ],
+  "zoom_hint_m_per_px": 20
+ },
+ "dems": [
+  {
+   "dem_id": "hirise_66",
+   "camera": "HiRISE",
+   "set_id": 66,
+   "res_m": 1,
+   "source_file": "psp_007356_1750_psp_008147_1750_tied-dem.tif",
+   "pair": "PSP_007356_1750 / PSP_008147_1750",
+   "bbox": [
+    137.381444,
+    -5.377413,
+    137.509107,
+    -5.01294
+   ],
+   "elev_range_m": [
+    -3124.2,
+    -1733.7
+   ],
+   "mola_offset_m": 0.23,
+   "unknown_pct_in_footprint": 0.81,
+   "suspect_pct": 0.099,
+   "priority": 1,
+   "source_order": 1,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 137.44359001995,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 6.01,
+    "p95": 20.86,
+    "p99": 33.2,
+    "max": 86.76
+   },
+   "slope_baseline_m": 5,
+   "slope_area_pct_of_valid_dem": 97.09,
+   "rough_m": {
+    "p50": 0.03,
+    "p95": 0.27
+   },
+   "rough_window_m": 5.0,
+   "relief_window_m": 21.0,
+   "grid": {
+    "bounds": [
+     137.38144462,
+     -5.37744625,
+     137.50917368,
+     -5.01287248
+    ],
+    "width": 1508,
+    "height": 4322,
+    "tiles": 88,
+    "bytes_all_vars": 51904512,
+    "nominal_res_m": 5.0
+   },
+   "data_gap_points": {
+    "before_cap": 665,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  },
+  {
+   "dem_id": "hirise_608",
+   "camera": "HiRISE",
+   "set_id": 608,
+   "res_m": 1,
+   "source_file": "esp_030880_1750_esp_030102_1750_tied-dem.tif",
+   "pair": "ESP_030880_1750 / ESP_030102_1750",
+   "bbox": [
+    137.439314,
+    -5.283291,
+    137.575415,
+    -4.779535
+   ],
+   "elev_range_m": [
+    -3480.9,
+    -1469.8
+   ],
+   "mola_offset_m": 4.51,
+   "unknown_pct_in_footprint": 1.14,
+   "suspect_pct": 0.139,
+   "priority": 1,
+   "source_order": 2,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 137.50362189409,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 7.7,
+    "p95": 22.92,
+    "p99": 33.89,
+    "max": 86.92
+   },
+   "slope_baseline_m": 5,
+   "slope_area_pct_of_valid_dem": 92.92,
+   "rough_m": {
+    "p50": 0.03,
+    "p95": 0.38
+   },
+   "rough_window_m": 5.0,
+   "relief_window_m": 21.0,
+   "grid": {
+    "bounds": [
+     137.43931441,
+     -5.28329141,
+     137.57539407,
+     -4.77953514
+    ],
+    "width": 1607,
+    "height": 5972,
+    "tiles": 114,
+    "bytes_all_vars": 67239936,
+    "nominal_res_m": 5.0
+   },
+   "data_gap_points": {
+    "before_cap": 1594,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  },
+  {
+   "dem_id": "ctx_66",
+   "camera": "CTX",
+   "set_id": 66,
+   "res_m": 18,
+   "source_file": "p16_007356_1749_xi_05s222w_p18_008147_1749_xn_05s222w_tied-dem.tif",
+   "pair": "P16_007356_1749_XI_05S222W / P18_008147_1749_XN_05S222W",
+   "bbox": [
+    137.129487,
+    -5.830026,
+    137.73777,
+    -4.388196
+   ],
+   "elev_range_m": [
+    -5330.0,
+    -121.6
+   ],
+   "mola_offset_m": 8.87,
+   "unknown_pct_in_footprint": 0.56,
+   "suspect_pct": 0.108,
+   "priority": 2,
+   "source_order": 3,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 137.4345332513,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 5.99,
+    "p95": 23.21,
+    "p99": 38.66,
+    "max": 88.18
+   },
+   "slope_baseline_m": 18,
+   "slope_area_pct_of_valid_dem": 99.41,
+   "rough_m": {
+    "p50": 0.83,
+    "p95": 4.04
+   },
+   "rough_window_m": 90.0,
+   "relief_window_m": 90.0,
+   "grid": {
+    "bounds": [
+     137.12886931,
+     -5.83002553,
+     137.73802397,
+     -4.38819616
+    ],
+    "width": 1998,
+    "height": 4748,
+    "tiles": 128,
+    "bytes_all_vars": 75497472,
+    "nominal_res_m": 18.0
+   },
+   "data_gap_points": {
+    "before_cap": 754,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  },
+  {
+   "dem_id": "ctx_608",
+   "camera": "CTX",
+   "set_id": 608,
+   "res_m": 18,
+   "source_file": "d09_030880_1751_xn_04s222w_d07_030102_1751_xn_04s222w_tied-dem.tif",
+   "pair": "D09_030880_1751_XN_04S222W / D07_030102_1751_XN_04S222W",
+   "bbox": [
+    137.144927,
+    -5.83367,
+    137.818877,
+    -3.935423
+   ],
+   "elev_range_m": [
+    -4878.6,
+    346.8
+   ],
+   "mola_offset_m": 2.25,
+   "unknown_pct_in_footprint": 1.29,
+   "suspect_pct": 0.107,
+   "priority": 3,
+   "source_order": 4,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 137.48084258388,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 6.25,
+    "p95": 23.18,
+    "p99": 36.45,
+    "max": 87.74
+   },
+   "slope_baseline_m": 18,
+   "slope_area_pct_of_valid_dem": 98.6,
+   "rough_m": {
+    "p50": 0.82,
+    "p95": 4.06
+   },
+   "rough_window_m": 90.0,
+   "relief_window_m": 90.0,
+   "grid": {
+    "bounds": [
+     137.14492729,
+     -5.83366958,
+     137.81909567,
+     -3.93542287
+    ],
+    "width": 2212,
+    "height": 6251,
+    "tiles": 171,
+    "bytes_all_vars": 100859904,
+    "nominal_res_m": 18.0
+   },
+   "data_gap_points": {
+    "before_cap": 2641,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  }
+ ],
+ "stats": {
+  "slope_p50_deg": 6.13,
+  "slope_p95_deg": 23.2,
+  "stats_basis": "all CTX DEMs of the region pooled, 18 m baseline (pixels in overlapping DEMs are counted once per DEM)",
+  "hirise_5m_baseline": {
+   "slope_p50_deg": 6.9,
+   "slope_p95_deg": 22.11,
+   "basis": "all HiRISE DEMs of the region pooled"
+  }
+ },
+ "notes": [
+  "Thresholds approved by Abdulaziz on 2026-11-14: rover caution 15\u00b0, no-go 25\u00b0; Marswalk caution 15\u00b0, no-go 20\u00b0. See manifest.thresholds and manifest.limitations.",
+  "Slope is measured over 5 m on HiRISE and over 18 m on CTX. The two give different values for the same ground.",
+  "Each steep_slope, rough_terrain and relief point is the most extreme spot in a 1 km square. Single extreme values are often artifacts; read the 95th percentile (p95) too.",
+  "DEMs are never mosaicked. Overlapping DEMs disagree in absolute height by tens of metres; mola_offset_m is for display only.",
+  "Unknown areas (NoData inside a DEM) are not safe areas. A route crossing them is unverified there.",
+  "No HiRISE DEM in this package covers the Curiosity traverse; rover-path checks in Gale use CTX (18 m) only.",
+  "6 of 210 catalogued craters (>= 1 km) have their rim slope measured; the rest lie outside the DEMs.",
+  "Geology is from a 1:20,000,000 global map: regional context only."
+ ],
+ "mission_context": "MSL / Curiosity",
+ "geology_units": [
+  "AHi",
+  "HNt",
+  "Htu",
+  "eHt",
+  "mNh"
+ ],
+ "hazard_grid": {
+  "cell_km": 1.0,
+  "center_lat_deg": -5.0,
+  "res_deg": [
+   0.016935047827931225,
+   0.01687060485811522
+  ],
+  "origin_nw": [
+   135.0,
+   -3.0
+  ],
+  "rows": 238,
+  "cols": 296,
+  "cell_id": "r<row from the north edge>_c<column from the west edge> of the search bbox"
+ },
+ "hazard_source_order": [
+  "hirise_66",
+  "hirise_608",
+  "ctx_66",
+  "ctx_608"
+ ],
+ "counts": {
+  "hazards": 9967,
+  "hazards_by_type": {
+   "steep_slope": 3263,
+   "rough_terrain": 2647,
+   "relief": 3247,
+   "data_gap": 600,
+   "crater_rim": 210
+  },
+  "cell_hazards": {
+   "steep_slope": {
+    "cells_with_data": 3438,
+    "cells_with_any_source": 3438,
+    "points": 3263,
+    "by_source": {
+     "ctx_66": 1871,
+     "ctx_608": 1129,
+     "hirise_608": 137,
+     "hirise_66": 126
+    },
+    "floors": {
+     "hirise": 15.0,
+     "ctx": 15.0
+    },
+    "level_rover": {
+     "caution": 534,
+     "nogo": 2729
+    },
+    "level_marswalk": {
+     "caution": 258,
+     "nogo": 3005
+    },
+    "suspect": 779,
+    "level_rover_p95": {
+     "ok": 1238,
+     "caution": 1102,
+     "nogo": 923
+    },
+    "level_marswalk_p95": {
+     "ok": 1238,
+     "caution": 577,
+     "nogo": 1448
+    },
+    "severity": {
+     "3": 258,
+     "4": 276,
+     "5": 291,
+     "6": 2438
+    }
+   },
+   "rough_terrain": {
+    "cells_with_data": 3419,
+    "cells_with_any_source": 3419,
+    "points": 2647,
+    "by_source": {
+     "ctx_66": 1365,
+     "ctx_608": 986,
+     "hirise_608": 156,
+     "hirise_66": 140
+    },
+    "floors": {
+     "hirise": 0.25,
+     "ctx": 4.5
+    }
+   },
+   "relief": {
+    "cells_with_data": 3419,
+    "cells_with_any_source": 3419,
+    "points": 3247,
+    "by_source": {
+     "ctx_66": 1825,
+     "ctx_608": 1139,
+     "hirise_608": 145,
+     "hirise_66": 138
+    },
+    "floors": {
+     "hirise": 3.7,
+     "ctx": 15.9
+    }
+   }
+  },
+  "craters": 210,
+  "craters_rim_measured": 6
+ },
+ "files": {
+  "traverse_waypoints_original": "MSL_waypoints.json"
+ }
+}

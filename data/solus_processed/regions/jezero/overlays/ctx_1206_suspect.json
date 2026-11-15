@@ -1,0 +1,29 @@
+{
+ "bounds": [
+  76.85907673,
+  17.91916356,
+  77.46476597,
+  18.98778141
+ ],
+ "size_px": [
+  1892,
+  3519
+ ],
+ "cell_m": 18.0,
+ "dem_id": "ctx_1206",
+ "source": "MRO CTX DEM 18 m, set 1206 (k19_060763_1986_xn_18n282w_k19_060697_1985_xn_18n282w_tied-dem.tif), Day et al. 2023 (doi:10.17189/ervc-mr85)",
+ "downsampled": false,
+ "native_res_m": 18,
+ "legend": [
+  {
+   "label": "suspect elevation (possible DEM artifact; flagged, not removed)",
+   "rgba": [
+    230,
+    0,
+    230,
+    170
+   ]
+  }
+ ],
+ "note": "display only. An overlay pixel is marked if any native pixel inside it failed the MOLA-consistency or the spike check (see reports/PROCESSING_REPORT.md)."
+}

@@ -1,0 +1,15 @@
+{
+ "tiles_gzip": true,
+ "tiles_pack": true,
+ "gzip_files": [
+  "regions/gale/MSL_waypoints.json",
+  "regions/gale/footprints.geojson",
+  "regions/gale/hazards.geojson",
+  "regions/jezero/M20_waypoints.json",
+  "regions/jezero/footprints.geojson",
+  "regions/jezero/hazards.geojson",
+  "regions/west_candor/footprints.geojson",
+  "regions/west_candor/hazards.geojson"
+ ],
+ "note": "Lossless gzip of the published data files; built by tools/build_site.py."
+}

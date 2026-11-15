@@ -1,0 +1,30 @@
+{
+ "bounds": [
+  76.85907673,
+  17.91916356,
+  77.46476597,
+  18.98778141
+ ],
+ "size_px": [
+  1892,
+  3519
+ ],
+ "cell_m": 18.0,
+ "dem_id": "ctx_1206",
+ "source": "MRO CTX DEM 18 m, set 1206 (k19_060763_1986_xn_18n282w_k19_060697_1985_xn_18n282w_tied-dem.tif), Day et al. 2023 (doi:10.17189/ervc-mr85)",
+ "downsampled": false,
+ "native_res_m": 18,
+ "legend": [
+  {
+   "label": "unknown: no elevation data inside the DEM footprint",
+   "rgba": [
+    128,
+    128,
+    128,
+    140
+   ],
+   "pattern": "diagonal hatch, rgba [60,60,60,220]"
+  }
+ ],
+ "note": "display only. An overlay pixel is marked if any native pixel inside it is NoData within the valid-data footprint. Unknown is not 'safe'."
+}

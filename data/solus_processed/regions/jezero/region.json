@@ -1,0 +1,658 @@
+{
+ "id": "jezero",
+ "name": "Jezero crater / NE Syrtis",
+ "search_bbox": [
+  75.0,
+  16.0,
+  80.0,
+  21.0
+ ],
+ "focus_bbox": [
+  77.0,
+  18.15,
+  77.75,
+  18.75
+ ],
+ "default_view": {
+  "center": [
+   77.375,
+   18.45
+  ],
+  "zoom_hint_m_per_px": 20
+ },
+ "dems": [
+  {
+   "dem_id": "hirise_1206",
+   "camera": "HiRISE",
+   "set_id": 1206,
+   "res_m": 1,
+   "source_file": "esp_060763_1985_esp_060697_1985_tied-dem.tif",
+   "pair": "ESP_060763_1985 / ESP_060697_1985",
+   "bbox": [
+    77.105863,
+    18.346403,
+    77.222248,
+    18.587518
+   ],
+   "elev_range_m": [
+    -2165.1,
+    -1816.0
+   ],
+   "mola_offset_m": -0.45,
+   "unknown_pct_in_footprint": 0.1,
+   "suspect_pct": 0.06,
+   "priority": 1,
+   "source_order": 1,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 77.156275997714,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 5.55,
+    "p95": 16.77,
+    "p99": 27.12,
+    "max": 65.24
+   },
+   "slope_baseline_m": 5,
+   "slope_area_pct_of_valid_dem": 97.4,
+   "rough_m": {
+    "p50": 0.02,
+    "p95": 0.19
+   },
+   "rough_window_m": 5.0,
+   "relief_window_m": 21.0,
+   "grid": {
+    "bounds": [
+     77.10586311,
+     18.34643694,
+     77.22227573,
+     18.58751788
+    ],
+    "width": 1309,
+    "height": 2858,
+    "tiles": 56,
+    "bytes_all_vars": 33030144,
+    "nominal_res_m": 5.0
+   },
+   "data_gap_points": {
+    "before_cap": 102,
+    "after_cap": 102
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  },
+  {
+   "dem_id": "hirise_1118",
+   "camera": "HiRISE",
+   "set_id": 1118,
+   "res_m": 1,
+   "source_file": "esp_055145_1985_esp_053734_1985_tied-dem.tif",
+   "pair": "ESP_055145_1985 / ESP_053734_1985",
+   "bbox": [
+    77.262724,
+    18.155344,
+    77.381472,
+    18.394164
+   ],
+   "elev_range_m": [
+    -2407.7,
+    -1481.7
+   ],
+   "mola_offset_m": -2.25,
+   "unknown_pct_in_footprint": 0.83,
+   "suspect_pct": 0.075,
+   "priority": 1,
+   "source_order": 2,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 77.317400547569,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 9.77,
+    "p95": 21.51,
+    "p99": 27.09,
+    "max": 85.57
+   },
+   "slope_baseline_m": 5,
+   "slope_area_pct_of_valid_dem": 94.42,
+   "rough_m": {
+    "p50": 0.04,
+    "p95": 0.27
+   },
+   "rough_window_m": 5.0,
+   "relief_window_m": 21.0,
+   "grid": {
+    "bounds": [
+     77.26272448,
+     18.15536047,
+     77.38149482,
+     18.39416388
+    ],
+    "width": 1337,
+    "height": 2831,
+    "tiles": 57,
+    "bytes_all_vars": 33619968,
+    "nominal_res_m": 5.0
+   },
+   "data_gap_points": {
+    "before_cap": 484,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  },
+  {
+   "dem_id": "hirise_1228",
+   "camera": "HiRISE",
+   "set_id": 1228,
+   "res_m": 1,
+   "source_file": "esp_062530_1985_esp_062319_1985_tied-dem.tif",
+   "pair": "ESP_062530_1985 / ESP_062319_1985",
+   "bbox": [
+    77.2337,
+    18.353793,
+    77.362974,
+    18.607526
+   ],
+   "elev_range_m": [
+    -2812.0,
+    -1616.1
+   ],
+   "mola_offset_m": -36.66,
+   "unknown_pct_in_footprint": 3.24,
+   "suspect_pct": 0.143,
+   "priority": 1,
+   "source_order": 3,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 77.293141144785,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 9.66,
+    "p95": 23.22,
+    "p99": 31.38,
+    "max": 86.95
+   },
+   "slope_baseline_m": 5,
+   "slope_area_pct_of_valid_dem": 91.86,
+   "rough_m": {
+    "p50": 0.04,
+    "p95": 0.34
+   },
+   "rough_window_m": 5.0,
+   "relief_window_m": 21.0,
+   "grid": {
+    "bounds": [
+     77.23369981,
+     18.35379252,
+     77.36301797,
+     18.60752642
+    ],
+    "width": 1454,
+    "height": 3008,
+    "tiles": 63,
+    "bytes_all_vars": 37158912,
+    "nominal_res_m": 5.0
+   },
+   "data_gap_points": {
+    "before_cap": 1345,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  },
+  {
+   "dem_id": "hirise_1159",
+   "camera": "HiRISE",
+   "set_id": 1159,
+   "res_m": 1,
+   "source_file": "esp_058996_1985_esp_058930_1985_tied-dem.tif",
+   "pair": "ESP_058996_1985 / ESP_058930_1985",
+   "bbox": [
+    77.173769,
+    18.358095,
+    77.286307,
+    18.533346
+   ],
+   "elev_range_m": [
+    -2298.0,
+    -1436.1
+   ],
+   "mola_offset_m": 3.11,
+   "unknown_pct_in_footprint": 4.62,
+   "suspect_pct": 0.142,
+   "priority": 1,
+   "source_order": 4,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 77.225820195148,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 6.6,
+    "p95": 19.93,
+    "p99": 27.52,
+    "max": 84.9
+   },
+   "slope_baseline_m": 5,
+   "slope_area_pct_of_valid_dem": 89.57,
+   "rough_m": {
+    "p50": 0.03,
+    "p95": 0.39
+   },
+   "rough_window_m": 5.0,
+   "relief_window_m": 21.0,
+   "grid": {
+    "bounds": [
+     77.17376882,
+     18.35806078,
+     77.28625449,
+     18.53334637
+    ],
+    "width": 1265,
+    "height": 2078,
+    "tiles": 43,
+    "bytes_all_vars": 25362432,
+    "nominal_res_m": 5.0
+   },
+   "data_gap_points": {
+    "before_cap": 703,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  },
+  {
+   "dem_id": "ctx_1228",
+   "camera": "CTX",
+   "set_id": 1228,
+   "res_m": 18,
+   "source_file": "k23_062530_1986_xn_18n282w_k23_062319_1986_xn_18n282w_tied-dem.tif",
+   "pair": "K23_062530_1986_XN_18N282W / K23_062319_1986_XN_18N282W",
+   "bbox": [
+    76.984777,
+    18.090434,
+    77.600482,
+    18.862973
+   ],
+   "elev_range_m": [
+    -2734.0,
+    -1493.4
+   ],
+   "mola_offset_m": -7.9,
+   "unknown_pct_in_footprint": 0.14,
+   "suspect_pct": 0.009,
+   "priority": 2,
+   "source_order": 5,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 77.291925112854,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 4.23,
+    "p95": 16.66,
+    "p99": 28.34,
+    "max": 84.0
+   },
+   "slope_baseline_m": 18,
+   "slope_area_pct_of_valid_dem": 99.61,
+   "rough_m": {
+    "p50": 0.45,
+    "p95": 2.21
+   },
+   "rough_window_m": 90.0,
+   "relief_window_m": 90.0,
+   "grid": {
+    "bounds": [
+     76.98477714,
+     18.09013027,
+     77.600794,
+     18.86297268
+    ],
+    "width": 1924,
+    "height": 2545,
+    "tiles": 74,
+    "bytes_all_vars": 43646976,
+    "nominal_res_m": 18.0
+   },
+   "data_gap_points": {
+    "before_cap": 157,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  },
+  {
+   "dem_id": "ctx_1206",
+   "camera": "CTX",
+   "set_id": 1206,
+   "res_m": 18,
+   "source_file": "k19_060763_1986_xn_18n282w_k19_060697_1985_xn_18n282w_tied-dem.tif",
+   "pair": "K19_060763_1986_XN_18N282W / K19_060697_1985_XN_18N282W",
+   "bbox": [
+    76.859077,
+    17.919164,
+    77.464452,
+    18.987781
+   ],
+   "elev_range_m": [
+    -2608.6,
+    -1495.4
+   ],
+   "mola_offset_m": -5.99,
+   "unknown_pct_in_footprint": 0.15,
+   "suspect_pct": 0.007,
+   "priority": 3,
+   "source_order": 6,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 77.159091144545,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 4.3,
+    "p95": 16.26,
+    "p99": 28.84,
+    "max": 83.63
+   },
+   "slope_baseline_m": 18,
+   "slope_area_pct_of_valid_dem": 99.56,
+   "rough_m": {
+    "p50": 0.45,
+    "p95": 2.24
+   },
+   "rough_window_m": 90.0,
+   "relief_window_m": 90.0,
+   "grid": {
+    "bounds": [
+     76.85907673,
+     17.91916356,
+     77.46476597,
+     18.98778141
+    ],
+    "width": 1892,
+    "height": 3519,
+    "tiles": 99,
+    "bytes_all_vars": 58392576,
+    "nominal_res_m": 18.0
+   },
+   "data_gap_points": {
+    "before_cap": 259,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  },
+  {
+   "dem_id": "ctx_1118",
+   "camera": "CTX",
+   "set_id": 1118,
+   "res_m": 18,
+   "source_file": "k05_055145_1985_xn_18n282w_k01_053734_1984_xn_18n282w_tied-dem.tif",
+   "pair": "K05_055145_1985_XN_18N282W / K01_053734_1984_XN_18N282W",
+   "bbox": [
+    77.032105,
+    17.871791,
+    77.609645,
+    18.640078
+   ],
+   "elev_range_m": [
+    -3161.9,
+    -1375.6
+   ],
+   "mola_offset_m": -6.59,
+   "unknown_pct_in_footprint": 0.43,
+   "suspect_pct": 0.048,
+   "priority": 4,
+   "source_order": 7,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 77.319323902975,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 4.42,
+    "p95": 18.91,
+    "p99": 32.1,
+    "max": 86.56
+   },
+   "slope_baseline_m": 18,
+   "slope_area_pct_of_valid_dem": 99.31,
+   "rough_m": {
+    "p50": 0.55,
+    "p95": 2.94
+   },
+   "rough_window_m": 90.0,
+   "relief_window_m": 90.0,
+   "grid": {
+    "bounds": [
+     77.03210484,
+     17.8717909,
+     77.60992156,
+     18.64007825
+    ],
+    "width": 1807,
+    "height": 2530,
+    "tiles": 71,
+    "bytes_all_vars": 41877504,
+    "nominal_res_m": 18.0
+   },
+   "data_gap_points": {
+    "before_cap": 553,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  },
+  {
+   "dem_id": "ctx_1159",
+   "camera": "CTX",
+   "set_id": 1159,
+   "res_m": 18,
+   "source_file": "k14_058996_1985_xn_18n282w_k14_058930_1986_xn_18n282w_tied-dem.tif",
+   "pair": "K14_058996_1985_XN_18N282W / K14_058930_1986_XN_18N282W",
+   "bbox": [
+    76.760957,
+    16.741224,
+    77.697164,
+    20.064598
+   ],
+   "elev_range_m": [
+    -3967.5,
+    -234.8
+   ],
+   "mola_offset_m": -6.75,
+   "unknown_pct_in_footprint": 1.42,
+   "suspect_pct": 0.205,
+   "priority": 5,
+   "source_order": 8,
+   "native_crs": {
+    "proj": "sinusoidal",
+    "lon_0": 77.233227788947,
+    "radius_m": 3396190.0
+   },
+   "slope_deg": {
+    "p50": 4.48,
+    "p95": 18.59,
+    "p99": 34.95,
+    "max": 88.0
+   },
+   "slope_baseline_m": 18,
+   "slope_area_pct_of_valid_dem": 98.59,
+   "rough_m": {
+    "p50": 0.52,
+    "p95": 3.4
+   },
+   "rough_window_m": 90.0,
+   "relief_window_m": 90.0,
+   "grid": {
+    "bounds": [
+     76.7609573,
+     16.74122419,
+     77.69738738,
+     20.06459838
+    ],
+    "width": 2926,
+    "height": 10944,
+    "tiles": 316,
+    "bytes_all_vars": 186384384,
+    "nominal_res_m": 18.0
+   },
+   "data_gap_points": {
+    "before_cap": 4052,
+    "after_cap": 150
+   },
+   "mola_offset_note": "display only: median(DEM - MOLA 463 m). Never applied to slope, roughness, hazards or the elev grid."
+  }
+ ],
+ "stats": {
+  "slope_p50_deg": 4.41,
+  "slope_p95_deg": 17.95,
+  "stats_basis": "all CTX DEMs of the region pooled, 18 m baseline (pixels in overlapping DEMs are counted once per DEM)",
+  "hirise_5m_baseline": {
+   "slope_p50_deg": 7.8,
+   "slope_p95_deg": 21.17,
+   "basis": "all HiRISE DEMs of the region pooled"
+  }
+ },
+ "notes": [
+  "Thresholds approved by Abdulaziz on 2026-11-14: rover caution 15\u00b0, no-go 25\u00b0; Marswalk caution 15\u00b0, no-go 20\u00b0. See manifest.thresholds and manifest.limitations.",
+  "Slope is measured over 5 m on HiRISE and over 18 m on CTX. The two give different values for the same ground.",
+  "Each steep_slope, rough_terrain and relief point is the most extreme spot in a 1 km square. Single extreme values are often artifacts; read the 95th percentile (p95) too.",
+  "DEMs are never mosaicked. Overlapping DEMs disagree in absolute height by tens of metres; mola_offset_m is for display only.",
+  "Unknown areas (NoData inside a DEM) are not safe areas. A route crossing them is unverified there.",
+  "HiRISE DEMs cover only part of the Perseverance traverse (set 1159: 12.62 km, set 1228: 13.32 km with a 5 m slope value); elsewhere checks use CTX.",
+  "13 of 208 catalogued craters (>= 1 km) have their rim slope measured; the rest lie outside the DEMs.",
+  "Geology is from a 1:20,000,000 global map: regional context only."
+ ],
+ "mission_context": "Mars 2020 / Perseverance",
+ "geology_units": [
+  "AHi",
+  "HNt",
+  "eHv",
+  "lHt",
+  "mNh",
+  "mNhm"
+ ],
+ "hazard_grid": {
+  "cell_km": 1.0,
+  "center_lat_deg": 18.5,
+  "res_deg": [
+   0.01778992305580203,
+   0.01687060485811522
+  ],
+  "origin_nw": [
+   75.0,
+   21.0
+  ],
+  "rows": 297,
+  "cols": 282,
+  "cell_id": "r<row from the north edge>_c<column from the west edge> of the search bbox"
+ },
+ "hazard_source_order": [
+  "hirise_1206",
+  "hirise_1118",
+  "hirise_1228",
+  "hirise_1159",
+  "ctx_1228",
+  "ctx_1206",
+  "ctx_1118",
+  "ctx_1159"
+ ],
+ "counts": {
+  "hazards": 16170,
+  "hazards_by_type": {
+   "steep_slope": 5404,
+   "rough_terrain": 3798,
+   "relief": 5608,
+   "data_gap": 1152,
+   "crater_rim": 208
+  },
+  "cell_hazards": {
+   "steep_slope": {
+    "cells_with_data": 6211,
+    "cells_with_any_source": 6211,
+    "points": 5404,
+    "by_source": {
+     "ctx_1159": 3558,
+     "ctx_1118": 190,
+     "ctx_1228": 785,
+     "ctx_1206": 634,
+     "hirise_1118": 57,
+     "hirise_1228": 75,
+     "hirise_1159": 26,
+     "hirise_1206": 79
+    },
+    "floors": {
+     "hirise": 15.0,
+     "ctx": 15.0
+    },
+    "level_rover": {
+     "caution": 1352,
+     "nogo": 4052
+    },
+    "level_marswalk": {
+     "caution": 659,
+     "nogo": 4745
+    },
+    "suspect": 800,
+    "level_rover_p95": {
+     "ok": 3165,
+     "caution": 1358,
+     "nogo": 881
+    },
+    "level_marswalk_p95": {
+     "ok": 3165,
+     "caution": 887,
+     "nogo": 1352
+    },
+    "severity": {
+     "3": 659,
+     "4": 693,
+     "5": 634,
+     "6": 3418
+    }
+   },
+   "rough_terrain": {
+    "cells_with_data": 6191,
+    "cells_with_any_source": 6191,
+    "points": 3798,
+    "by_source": {
+     "ctx_1159": 2668,
+     "ctx_1118": 140,
+     "hirise_1228": 83,
+     "ctx_1228": 380,
+     "hirise_1118": 84,
+     "ctx_1206": 332,
+     "hirise_1159": 27,
+     "hirise_1206": 84
+    },
+    "floors": {
+     "hirise": 0.25,
+     "ctx": 4.5
+    }
+   },
+   "relief": {
+    "cells_with_data": 6191,
+    "cells_with_any_source": 6191,
+    "points": 5608,
+    "by_source": {
+     "ctx_1159": 3667,
+     "ctx_1228": 790,
+     "ctx_1118": 205,
+     "hirise_1228": 80,
+     "ctx_1206": 688,
+     "hirise_1118": 66,
+     "hirise_1159": 28,
+     "hirise_1206": 84
+    },
+    "floors": {
+     "hirise": 3.7,
+     "ctx": 15.9
+    }
+   }
+  },
+  "craters": 208,
+  "craters_rim_measured": 13
+ },
+ "files": {
+  "traverse_waypoints_original": "M20_waypoints.json"
+ }
+}

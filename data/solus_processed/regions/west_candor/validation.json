@@ -1,0 +1,367 @@
+{
+ "region": "west_candor",
+ "generated_by": "code/03_validation.py",
+ "thresholds_deg": [
+  5,
+  10,
+  15,
+  20,
+  25,
+  30
+ ],
+ "hirise_vs_ctx_slope_18m_baseline": {
+  "method": "HiRISE DEM area-averaged onto the paired CTX grid (GDAL 'average'; cells with <99.9 % valid HiRISE pixels are NoData), Horn 3x3 at 18 m, compared cell by cell with CTX Horn slope",
+  "pairs": [
+   {
+    "hirise": "hirise_376",
+    "ctx": "ctx_376",
+    "set_id": 376,
+    "cells_compared": 226582,
+    "area_km2": 73.41,
+    "median_hirise18_deg": 12.59,
+    "median_ctx_deg": 11.88,
+    "p95_hirise18_deg": 29.41,
+    "p95_ctx_deg": 31.27,
+    "median_hirise_1m_mean_in_cell_deg": 14.35,
+    "diff_hirise18_minus_ctx_deg": {
+     "median": 0.21,
+     "mean": 0.21,
+     "mad": 2.84,
+     "rmse": 5.93,
+     "p5": -9.0,
+     "p95": 9.68,
+     "pct_within_2deg": 38.1,
+     "pct_within_5deg": 71.1
+    },
+    "pearson_r": 0.76,
+    "excluding_ctx_suspect": {
+     "cells": 226547,
+     "median": 0.22,
+     "rmse": 5.92
+    },
+    "class_agreement_pct": {
+     "10": 77.6,
+     "15": 82.9,
+     "20": 89.6,
+     "25": 92.5,
+     "30": 94.6
+    }
+   },
+   {
+    "hirise": "hirise_482",
+    "ctx": "ctx_482",
+    "set_id": 482,
+    "cells_compared": 199509,
+    "area_km2": 64.64,
+    "median_hirise18_deg": 17.8,
+    "median_ctx_deg": 16.95,
+    "p95_hirise18_deg": 30.96,
+    "p95_ctx_deg": 33.94,
+    "median_hirise_1m_mean_in_cell_deg": 19.82,
+    "diff_hirise18_minus_ctx_deg": {
+     "median": -0.03,
+     "mean": -0.28,
+     "mad": 2.73,
+     "rmse": 6.49,
+     "p5": -10.85,
+     "p95": 9.53,
+     "pct_within_2deg": 39.5,
+     "pct_within_5deg": 71.2
+    },
+    "pearson_r": 0.776,
+    "excluding_ctx_suspect": {
+     "cells": 199434,
+     "median": -0.03,
+     "rmse": 6.47
+    },
+    "class_agreement_pct": {
+     "10": 85.5,
+     "15": 85.7,
+     "20": 85.5,
+     "25": 84.9,
+     "30": 91.0
+    }
+   },
+   {
+    "hirise": "hirise_1029",
+    "ctx": "ctx_1029",
+    "set_id": 1029,
+    "cells_compared": 97156,
+    "area_km2": 31.48,
+    "median_hirise18_deg": 5.26,
+    "median_ctx_deg": 5.36,
+    "p95_hirise18_deg": 12.15,
+    "p95_ctx_deg": 14.36,
+    "median_hirise_1m_mean_in_cell_deg": 6.19,
+    "diff_hirise18_minus_ctx_deg": {
+     "median": -0.04,
+     "mean": -0.47,
+     "mad": 1.58,
+     "rmse": 3.64,
+     "p5": -6.4,
+     "p95": 4.07,
+     "pct_within_2deg": 59.4,
+     "pct_within_5deg": 89.7
+    },
+    "pearson_r": 0.602,
+    "excluding_ctx_suspect": {
+     "cells": 97156,
+     "median": -0.04,
+     "rmse": 3.64
+    },
+    "class_agreement_pct": {
+     "10": 87.0,
+     "15": 95.8,
+     "20": 98.7,
+     "25": 99.5,
+     "30": 99.8
+    }
+   },
+   {
+    "hirise": "hirise_1347",
+    "ctx": "ctx_1347",
+    "set_id": 1347,
+    "cells_compared": 47591,
+    "area_km2": 15.42,
+    "median_hirise18_deg": 12.64,
+    "median_ctx_deg": 12.45,
+    "p95_hirise18_deg": 26.8,
+    "p95_ctx_deg": 31.7,
+    "median_hirise_1m_mean_in_cell_deg": 14.17,
+    "diff_hirise18_minus_ctx_deg": {
+     "median": -0.08,
+     "mean": -0.73,
+     "mad": 3.72,
+     "rmse": 8.04,
+     "p5": -14.61,
+     "p95": 10.4,
+     "pct_within_2deg": 29.9,
+     "pct_within_5deg": 61.0
+    },
+    "pearson_r": 0.555,
+    "excluding_ctx_suspect": {
+     "cells": 47563,
+     "median": -0.08,
+     "rmse": 8.02
+    },
+    "class_agreement_pct": {
+     "10": 74.2,
+     "15": 76.9,
+     "20": 81.9,
+     "25": 87.2,
+     "30": 93.1
+    }
+   }
+  ]
+ },
+ "rover_path": null,
+ "contract_version": "1.1",
+ "approved_thresholds": {
+  "rover": {
+   "caution_deg": 15,
+   "nogo_deg": 25,
+   "walkback_km": 10,
+   "sources": [
+    "M8",
+    "L4",
+    "L1",
+    "M4",
+    "W6",
+    "W7"
+   ]
+  },
+  "marswalk": {
+   "caution_deg": 15,
+   "nogo_deg": 20,
+   "walkback_km": 2,
+   "sources": [
+    "W3",
+    "W4",
+    "W1",
+    "W2",
+    "W5"
+   ]
+  }
+ },
+ "hirise_slope_1m_vs_5m_baseline": {
+  "note": "1 m slope is kept here for comparison only; contract 1.1 uses the 5 m baseline for HiRISE everywhere else",
+  "dems": [
+   {
+    "dem_id": "hirise_1029",
+    "slope_1m_baseline_deg": {
+     "n": 47294118,
+     "p50": 6.75,
+     "p75": 10.76,
+     "p90": 17.04,
+     "p95": 25.26,
+     "p99": 51.53,
+     "max": 88.99
+    },
+    "slope_1m_pct_above_deg": {
+     "5": 65.023,
+     "10": 28.776,
+     "15": 12.761,
+     "20": 7.477,
+     "25": 5.09,
+     "30": 3.73,
+     "35": 2.81,
+     "40": 2.12,
+     "45": 1.569
+    },
+    "slope_5m_baseline_deg": {
+     "n": 1718698,
+     "p50": 5.92,
+     "p75": 9.11,
+     "p90": 12.47,
+     "p95": 15.23,
+     "p99": 22.76,
+     "max": 78.46
+    },
+    "slope_5m_pct_above_deg": {
+     "5": 59.337,
+     "10": 19.851,
+     "15": 5.292,
+     "20": 1.777,
+     "25": 0.623,
+     "30": 0.223,
+     "35": 0.082,
+     "40": 0.031,
+     "45": 0.012
+    },
+    "area_with_5m_slope_pct_of_valid_dem": 89.44
+   },
+   {
+    "dem_id": "hirise_376",
+    "slope_1m_baseline_deg": {
+     "n": 119100812,
+     "p50": 16.55,
+     "p75": 25.51,
+     "p90": 35.54,
+     "p95": 45.26,
+     "p99": 66.35,
+     "max": 89.75
+    },
+    "slope_1m_pct_above_deg": {
+     "5": 91.971,
+     "10": 74.294,
+     "15": 55.191,
+     "20": 39.564,
+     "25": 26.231,
+     "30": 16.395,
+     "35": 10.463,
+     "40": 7.105,
+     "45": 5.085
+    },
+    "slope_5m_baseline_deg": {
+     "n": 4330709,
+     "p50": 14.82,
+     "p75": 22.76,
+     "p90": 28.98,
+     "p95": 32.91,
+     "p99": 41.11,
+     "max": 87.46
+    },
+    "slope_5m_pct_above_deg": {
+     "5": 90.437,
+     "10": 70.303,
+     "15": 49.336,
+     "20": 33.018,
+     "25": 18.657,
+     "30": 8.437,
+     "35": 3.342,
+     "40": 1.246,
+     "45": 0.452
+    },
+    "area_with_5m_slope_pct_of_valid_dem": 89.79
+   },
+   {
+    "dem_id": "hirise_482",
+    "slope_1m_baseline_deg": {
+     "n": 89951201,
+     "p50": 19.43,
+     "p75": 26.95,
+     "p90": 35.6,
+     "p95": 46.34,
+     "p99": 69.03,
+     "max": 89.73
+    },
+    "slope_1m_pct_above_deg": {
+     "5": 92.1,
+     "10": 77.682,
+     "15": 63.161,
+     "20": 48.208,
+     "25": 31.265,
+     "30": 17.691,
+     "35": 10.544,
+     "40": 7.249,
+     "45": 5.386
+    },
+    "slope_5m_baseline_deg": {
+     "n": 3378555,
+     "p50": 18.16,
+     "p75": 24.83,
+     "p90": 30.03,
+     "p95": 33.71,
+     "p99": 43.8,
+     "max": 83.7
+    },
+    "slope_5m_pct_above_deg": {
+     "5": 91.021,
+     "10": 75.379,
+     "15": 59.797,
+     "20": 43.838,
+     "25": 24.279,
+     "30": 10.054,
+     "35": 3.937,
+     "40": 1.799,
+     "45": 0.82
+    },
+    "area_with_5m_slope_pct_of_valid_dem": 93.03
+   },
+   {
+    "dem_id": "hirise_1347",
+    "slope_1m_baseline_deg": {
+     "n": 52699608,
+     "p50": 15.2,
+     "p75": 24.06,
+     "p90": 36.11,
+     "p95": 47.24,
+     "p99": 70.79,
+     "max": 89.73
+    },
+    "slope_1m_pct_above_deg": {
+     "5": 90.326,
+     "10": 70.533,
+     "15": 50.756,
+     "20": 34.742,
+     "25": 23.138,
+     "30": 15.461,
+     "35": 10.781,
+     "40": 7.776,
+     "45": 5.72
+    },
+    "slope_5m_baseline_deg": {
+     "n": 1626987,
+     "p50": 12.95,
+     "p75": 19.42,
+     "p90": 26.0,
+     "p95": 30.5,
+     "p99": 48.35,
+     "max": 87.21
+    },
+    "slope_5m_pct_above_deg": {
+     "5": 88.226,
+     "10": 64.361,
+     "15": 41.043,
+     "20": 23.288,
+     "25": 11.708,
+     "30": 5.375,
+     "35": 2.77,
+     "40": 1.68,
+     "45": 1.184
+    },
+    "area_with_5m_slope_pct_of_valid_dem": 73.93
+   }
+  ]
+ }
+}

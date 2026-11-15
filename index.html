@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOLUS — Martian Exploration Mission Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23c56b45'/%3E%3Cpath d='M5 13 Q16 3 27 13' stroke='%23e5484d' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/solus.css">
+</head>
+<body>
+<div class="filewarn" id="filewarn">
+  <div>
+    <h2>SOLUS needs to run from a local web server</h2>
+    <p>Browsers block a page opened straight from disk from loading its data files.</p>
+    <p>On Windows, double-click <code>start.bat</code> in the SOLUS folder (or run <code>python -m http.server 8080</code> there)<br>and open <code>http://localhost:8080</code>.</p>
+  </div>
+</div>
+<script>if (location.protocol === 'file:') document.getElementById('filewarn').classList.add('show');</script>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <img class="logo" src="assets/logo.webp" alt="SOLUS">
+      <div class="brand-text">
+        <div class="ver" id="ver"></div>
+        <div class="sub">Martian Exploration Mission Map</div>
+      </div>
+    </div>
+
+    <div class="scroll" id="sidescroll">
+      <div class="section">
+        <h2>Region <small id="regionMission"></small></h2>
+        <div class="seg cols-3 regions" id="regionTabs"></div>
+      </div>
+
+      <div class="section">
+        <h2>Mission mode</h2>
+        <div class="seg cols-2" id="modeTabs">
+          <button data-mode="rover" class="active">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h24v4H4z"/><path d="M8 18l3-6h10l3 6"/><circle cx="8" cy="25" r="2.6"/><circle cx="16" cy="25" r="2.6"/><circle cx="24" cy="25" r="2.6"/><path d="M14 12V7h6"/></svg>
+            Rover
+          </button>
+          <button data-mode="marswalk">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="5.5" r="2.6"/><path d="M15 10l-4 5 3 2M15 10l4 3 3 0M15 10l-1 8 4 4 1 6M14 18l-4 4-3 5"/></svg>
+            Marswalk
+          </button>
+        </div>
+        <div class="mode-note" id="modeNote"></div>
+      </div>
+
+      <div class="section">
+        <h2>Viewing / Layers</h2>
+        <div id="layerList"></div>
+      </div>
+
+      <div class="section" id="riskSection">
+        <h2>Risk assessment <small id="riskCount"></small></h2>
+        <div id="risk"></div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="links">
+        <a id="lnkLimits">Limitations</a>
+        <a id="lnkThresholds">Thresholds</a>
+        <a id="lnkValidation">Validation</a>
+        <a id="lnkSources">Sources</a>
+        <a id="lnkAbout">About</a>
+      </div>
+      <div class="credit">SOLUS · NASA Space Apps Challenge 2026 · Madinah · Terrain derived from NASA data; not an operational safety tool.</div>
+    </div>
+  </aside>
+
+  <main class="mapwrap" id="mapwrap">
+    <div class="status" id="status"></div>
+    <div class="tools">
+      <button class="tool" id="btnRoute" title="Plan route: click points on the map, double-click or Enter to finish">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="6" r="2.5"/><path d="M7 16.5c3-1 3-6 6-7s3-1 4-1.5" stroke-dasharray="2.5 2.5"/></svg>
+      </button>
+      <button class="tool" id="btnUndo" title="Remove last route point">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14L4 9l5-5"/><path d="M4 9h11a5 5 0 010 10h-3"/></svg>
+      </button>
+      <button class="tool" id="btnClear" title="Clear route">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="tool-group">
+        <button class="tool" id="btnZoomIn" title="Zoom in">+</button>
+        <button class="tool" id="btnZoomOut" title="Zoom out">−</button>
+      </div>
+      <button class="tool" id="btnFit" title="Fit region">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      </button>
+    </div>
+    <div class="toast" id="toast"></div>
+    <div class="pop" id="pop"><button class="pop-x" id="popClose" title="Close">✕</button><div id="popBody"></div></div>
+    <div class="tip" id="tip"></div>
+    <div class="hint" id="hint">Click to add route points · double-click or press <b>Enter</b> to finish · right-click removes the last point</div>
+    <div class="loading hide" id="loading">Loading…</div>
+    <div class="attrib">Imagery: NASA/JPL-Caltech Mars Trek (MRO HiRISE · CTX · Viking MDIM 2.1) · Terrain: Day et al. 2023, NASA PDS</div>
+  </main>
+
+  <footer class="bottombar">
+    <label class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input id="searchInput" placeholder="Search coordinates (LAT, LON) — e.g. 18.44, 77.23" autocomplete="off">
+    </label>
+    <div class="readout"><span>LAT</span><b id="roLat">—</b></div>
+    <div class="readout"><span>LON</span><b id="roLon">—</b></div>
+    <div class="readout wide" id="roTerrainBox"><span>TERRAIN</span><b id="roTerrain" style="font-size:13px">—</b></div>
+    <div class="sep"></div>
+    <select class="fmt" id="fmtSel">
+      <option value="dd">Decimal Degrees (°)</option>
+      <option value="dms">Deg · Min · Sec</option>
+    </select>
+    <div class="scalebar" id="scalebar">
+      <div class="ticks"><span>0</span><span id="sbMid"></span><span id="sbEnd"></span></div>
+      <div class="line" id="sbLine"></div>
+    </div>
+    <div class="sep"></div>
+    <div class="north" title="North is up (plate carrée)">
+      <svg viewBox="0 0 24 24"><path d="M12 2l6 18-6-4-6 4z" fill="#e7edf5"/></svg>N
+    </div>
+  </footer>
+</div>
+
+<div class="modal" id="modal"><div class="box" id="modalBox"></div></div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+{
+ "contract_version": "1.1",
+ "generated_at": "2026-11-14T11:21:20Z",
+ "crs": {
+  "type": "geographic",
+  "body": "Mars",
+  "radius_m": 3396190,
+  "lon_convention": "east, -180..180"
+ },
+ "regions": [
+  "jezero",
+  "gale",
+  "west_candor"
+ ],
+ "thresholds_status": "approved by Abdulaziz 2026-11-14; see thresholds",
+ "citations": [
+  "Day, M., Kim, E., Sullivan, M., Goudge, T., Paige, D. (2023). Mars Human Exploration Zone DEM Archive 2023. USGS Astrogeology / NASA PDS4. doi:10.17189/ervc-mr85",
+  "Smith, D.E. et al. (2001). Mars Orbiter Laser Altimeter: Experiment summary after the first year of global mapping of Mars. JGR 106(E10), 23689-23722.",
+  "Tanaka, K.L. et al. (2014). Geologic Map of Mars. USGS SIM 3292. doi:10.3133/sim3292",
+  "Robbins, S.J., Hynek, B.M. (2012). A new global database of Mars impact craters >=1 km. JGR Planets 117, E05004. doi:10.1029/2011JE003966",
+  "Horn, B.K.P. (1981). Hill shading and the reflectance map. Proc. IEEE 69(1), 14-47. (slope method)",
+  "NASA/JPL MMGIS: Mars 2020 (Perseverance) and MSL (Curiosity) traverse data.",
+  "NASA/JPL Mars Trek (trek.nasa.gov): imagery basemaps."
+ ],
+ "thresholds": {
+  "status": "approved by Abdulaziz 2026-11-14",
+  "slope_baseline_note": "Limits are compared with slope at 5 m baseline (HiRISE) or 18 m (CTX). See limitations.",
+  "modes": {
+   "rover": {
+    "caution_deg": 15,
+    "nogo_deg": 25,
+    "walkback_km": 10,
+    "sources": [
+     "M8",
+     "L4",
+     "L1",
+     "M4",
+     "W6",
+     "W7"
+    ]
+   },
+   "marswalk": {
+    "caution_deg": 15,
+    "nogo_deg": 20,
+    "walkback_km": 2,
+    "sources": [
+     "W3",
+     "W4",
+     "W1",
+     "W2",
+     "W5"
+    ]
+   }
+  },
+  "level_rule": "ok: slope < caution_deg; caution: caution_deg <= slope < nogo_deg; nogo: slope >= nogo_deg",
+  "sources_full": {
+   "M8": "15 deg over a 5 m length scale 'to ensure landing stability and trafficability of the rover' (table: 'trafficability in loose granular material'). MSL Project (JPL), MSL Landing Site Selection User's Guide to Engineering Constraints, v2 (2006). https://marsoweb.nas.nasa.gov/landingsites/msl/memoranda/MSL_Eng_User_Guide_v2.pdf",
+   "L4": "'roll instability would be approached on the 15-degree slopes if the vehicle were traveling a contour line with one crewmember on the downhill side.' Apollo 15 Mission Report, section 9, quoted in NASA Apollo Lunar Surface Journal, Working on the Moon: LRV Performance. https://www.nasa.gov/wp-content/uploads/static/history/alsj/WOTM/WOTM-LRVPerformance.html",
+   "L1": "'The LRVs were designed to navigate a 20 - 23 deg slope in favorable conditions with a max of 25 deg.' Jacob, Montalvo, Gray, Britton, Thomas, Miller (NASA JSC), Apollo Lunar Roving Vehicle as Traversed Performance Metrics: Preparing for Artemis Mobile Vehicle Traverse Planning, 57th LPSC abstract (2026), NTRS 20250011301. https://ntrs.nasa.gov/citations/20250011301",
+   "M4": "Largest tilt Curiosity experienced in its first seven years: 25.34 deg (sol 2477). Rankin, Maimone, Biesiadecki, Patel, Levine, Toupet (JPL), Driving Curiosity: Mars Rover Mobility Trends During the First Seven Years, IEEE Aerospace Conference (2020). https://www-robotics.jpl.nasa.gov/media/documents/2020-mobility-trending.pdf",
+   "W1": "'Walking up/down/across a slope of up to 20 deg and on traverses of up to 2 km away from the lander (depending on terrain)'. Coan, D. (NASA), Exploration EVA System Concept of Operations Summary for Artemis Phase 1 Lunar Surface Mission, EVA-EXP-0075 (February 2020). https://www.nasa.gov/wp-content/uploads/2020/01/topic_1-_eva_lunar_surface_concept_of_operations.pdf",
+   "W2": "'Walking up/down/across a slope of up to 20 deg'. Coan, D. (NASA), NASA Exploration EVA Integrated HITL Testing and Analogs, Revision A (31 January 2021), NTRS 20210000827. https://ntrs.nasa.gov/citations/20210000827",
+   "W3": "'Apollo 15 traversed on slopes of ~17 deg'. Coan, D. (NASA), Exploration EVA System Concept of Operations Summary for Artemis Phase 1 Lunar Surface Mission, EVA-EXP-0075 (February 2020). https://www.nasa.gov/wp-content/uploads/2020/01/topic_1-_eva_lunar_surface_concept_of_operations.pdf",
+   "W4": "Slopes on NASA's notional Artemis walking traverses: 'slopes range up to ~16 deg', '~12 deg', '~20 deg' over 1-2 km. Coan, D. (NASA), Exploration EVA System Concept of Operations Summary for Artemis Phase 1 Lunar Surface Mission, EVA-EXP-0075 (February 2020). https://www.nasa.gov/wp-content/uploads/2020/01/topic_1-_eva_lunar_surface_concept_of_operations.pdf",
+   "W5": "'Walking Range 2 km ... Assumes ~2 km/hr walking pace on relatively level regolith. Does not account for slope or obstacles (boulders).' Coan, D. (NASA), Exploration EVA System Concept of Operations Summary for Artemis Phase 1 Lunar Surface Mission, EVA-EXP-0075 (February 2020). https://www.nasa.gov/wp-content/uploads/2020/01/topic_1-_eva_lunar_surface_concept_of_operations.pdf",
+   "W6": "'Unpressurized Rover Range ~10 km (~5 hr walk back)'. Coan, D. (NASA), Exploration EVA System Concept of Operations Summary for Artemis Phase 1 Lunar Surface Mission, EVA-EXP-0075 (February 2020). https://www.nasa.gov/wp-content/uploads/2020/01/topic_1-_eva_lunar_surface_concept_of_operations.pdf",
+   "W7": "Apollo exploration 'was confined to the distance astronauts could expect to walk back wearing spacesuits if their rovers broke down: about 6 miles.' NASA, Space Exploration Vehicle Concept fact sheet FS-2011-08-045-JSC (2011). https://www.nasa.gov/wp-content/uploads/2015/08/464826main_sev_factsheet_508.pdf"
+  }
+ },
+ "severity_classes": [
+  {
+   "severity": 1,
+   "min_deg": 5,
+   "max_deg": 10
+  },
+  {
+   "severity": 2,
+   "min_deg": 10,
+   "max_deg": 15
+  },
+  {
+   "severity": 3,
+   "min_deg": 15,
+   "max_deg": 20
+  },
+  {
+   "severity": 4,
+   "min_deg": 20,
+   "max_deg": 25
+  },
+  {
+   "severity": 5,
+   "min_deg": 25,
+   "max_deg": 30
+  },
+  {
+   "severity": 6,
+   "min_deg": 30,
+   "max_deg": null
+  }
+ ],
+ "limitations": [
+  "No published slope limit exists for a crewed Mars rover or for suited walking on Mars. The limits used come from the Apollo rover (Moon, 1/6 g), the Artemis suit requirement (Moon) and NASA's robotic Mars rovers.",
+  "Slope does not show soil type. The same vehicle can be stopped by loose sand at low slopes, or can exceed 30\u00b0 on solid rock.",
+  "Rocks smaller than about 1 m (obstacle limits are 0.3\u20130.5 m) can't be seen in these elevation models.",
+  "A single 18 m cell's slope is uncertain by several degrees (HiRISE vs CTX RMSE 3.6\u20138.0\u00b0).",
+  "HiRISE elevation models contain straight-line artifacts that can look like steep lines; they are not flagged.",
+  "Only craters \u2265 1 km are catalogued (Robbins & Hynek 2012).",
+  "West Candor has no rover ground truth. In Gale, no HiRISE model covers Curiosity's route.",
+  "A drawn route is never verified safe. Grey (unknown) areas have no elevation data.",
+  "The steepest spot in a 1 km square is a single value and is often an elevation-model artifact. The 95th-percentile slope given with each point describes the square better.",
+  "The elevation models overstate steep ground: the rovers recorded gentler tilt than the models show at the same places.",
+  "Slope is not computed next to data gaps (within about 15 m for HiRISE and 18 m for CTX), because nothing is filled in.",
+  "Overlapping elevation models disagree in absolute height by tens of metres. Heights come from one model at a time and are never merged.",
+  "Where elevation models overlap, the most detailed one with data is used: HiRISE (slope over 5 m) before CTX (slope over 18 m). The two baselines give different slope values for the same ground.",
+  "The roughness and relief floors are placeholders chosen during processing, not published limits.",
+  "Geology comes from a 1:20,000,000 global map and gives regional context only."
+ ],
+ "hazard_floors": {
+  "slope_deg": 15.0,
+  "slope_floor_basis": "lowest approved caution level",
+  "rough_m": {
+   "HiRISE (5 m window)": 0.25,
+   "CTX (90 m window)": 4.5
+  },
+  "relief_m": {
+   "HiRISE (21 m window)": 3.7,
+   "CTX (90 m window)": 15.9
+  },
+  "rough_and_relief_status": "chosen by Fable (5 % of the window; window x tan 10 deg); not published limits",
+  "data_gap_min_area_m2": {
+   "HiRISE": 100.0,
+   "CTX": 972.0
+  },
+  "data_gap_cap_per_dem": 150
+ },
+ "hazard_method": "steep_slope, rough_terrain, relief: one point per 1 km cell (regions/<region>/region.json: hazard_grid), no cap. data_gap, crater_rim: as in contract 1.0.",
+ "slope_baseline_m": {
+  "HiRISE": 5,
+  "CTX": 18
+ },
+ "slope_classes_deg": [
+  0,
+  5,
+  10,
+  15,
+  20,
+  25,
+  30,
+  90
+ ],
+ "slope_class_rgba": [
+  [
+   252,
+   253,
+   191,
+   150
+  ],
+  [
+   254,
+   202,
+   141,
+   185
+  ],
+  [
+   253,
+   150,
+   104,
+   205
+  ],
+  [
+   241,
+   96,
+   93,
+   215
+  ],
+  [
+   205,
+   64,
+   113,
+   225
+  ],
+  [
+   140,
+   41,
+   129,
+   235
+  ],
+  [
+   59,
+   15,
+   112,
+   245
+  ]
+ ],
+ "grid_variables": [
+  "slope",
+  "rough",
+  "elev",
+  "unknown"
+ ],
+ "grid_nominal_res_m": {
+  "HiRISE": 5.0,
+  "CTX": 18.0
+ },
+ "reports": [
+  "reports/PROCESSING_REPORT.md",
+  "reports/THRESHOLDS_RESEARCH.md"
+ ],
+ "extra_files_not_in_contract": [
+  "regions/jezero/M20_waypoints.json",
+  "regions/gale/MSL_waypoints.json (original NASA/JPL waypoint files, unmodified)",
+  "reports/SELFCHECK.json"
+ ],
+ "changes_from_1.0": [
+  "HiRISE grid cell 2 m -> 5 m",
+  "HiRISE slope 1 m -> 5 m baseline (baseline_m in slope meta.json)",
+  "HiRISE relief window 101 m -> 21 m",
+  "hazards: regions + cap 150 -> one point per 1 km cell, no cap",
+  "slope hazard floor 10 -> 15 deg",
+  "new hazard properties: cell_id, p95, severity, level_rover, level_marswalk, baseline_m",
+  "manifest: thresholds, severity_classes, limitations",
+  "DEM priority: HiRISE 1; CTX 2, 3, 4... by lowest unknown %"
+ ]
+}

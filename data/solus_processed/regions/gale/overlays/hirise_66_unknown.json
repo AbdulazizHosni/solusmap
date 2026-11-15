@@ -1,0 +1,31 @@
+{
+ "bounds": [
+  137.38144462,
+  -5.37745702,
+  137.50916443,
+  -5.01287248
+ ],
+ "size_px": [
+  1429,
+  4096
+ ],
+ "cell_m": 5.276,
+ "dem_id": "hirise_66",
+ "source": "MRO HiRISE DEM 1 m, set 66 (psp_007356_1750_psp_008147_1750_tied-dem.tif), Day et al. 2023 (doi:10.17189/ervc-mr85)",
+ "slope_baseline_m": 5,
+ "downsampled": true,
+ "native_res_m": 1,
+ "legend": [
+  {
+   "label": "unknown: no elevation data inside the DEM footprint",
+   "rgba": [
+    128,
+    128,
+    128,
+    140
+   ],
+   "pattern": "diagonal hatch, rgba [60,60,60,220]"
+  }
+ ],
+ "note": "display only. An overlay pixel is marked if any native pixel inside it is NoData within the valid-data footprint. Unknown is not 'safe'."
+}

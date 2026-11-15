@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#05080d">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>SOLUS Navigation</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23c56b45'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+<div id="app" class="nav">
+  <!-- map (heading-up: the inner layer rotates) -->
+  <div class="mapbox" id="mapbox"><div class="maprot" id="maprot"></div>
+    <div class="compass" id="compass" title="North">N</div>
+  </div>
+
+  <!-- the next instruction -->
+  <div class="hero" id="hero">
+    <div class="hero-ico" id="heroIco"></div>
+    <div class="hero-txt"><div class="hero-dist" id="heroDist"></div><div class="hero-main" id="heroMain">Loading route…</div><div class="hero-sub" id="heroSub"></div></div>
+  </div>
+
+  <!-- tablet side panel -->
+  <aside class="side" id="side">
+    <div class="tiles" id="tiles"></div>
+    <div class="block"><h3>Ahead on the route</h3><div id="ahead"></div></div>
+    <div class="block"><h3>Elevation profile <small>model heights</small></h3><canvas id="profile" width="720" height="200"></canvas></div>
+  </aside>
+
+  <!-- wrist stats -->
+  <div class="wstats" id="wstats"></div>
+
+  <!-- controls -->
+  <div class="ctrl" id="ctrl">
+    <button id="bPlay" title="Play / pause">▶</button>
+    <button id="bSpeed" title="Playback speed">60×</button>
+    <input id="scrub" type="range" min="0" max="1000" value="0" title="Position along the route">
+    <button id="bRestart" title="Back to START">⟲</button>
+    <button id="bNorth" title="Heading-up / north-up">⬆</button>
+    <button id="bView" title="Switch tablet / wrist view">⌚</button>
+  </div>
+
+  <div class="badge" id="badge">SIMULATED position · no GPS on Mars</div>
+  <div class="msg" id="msg"></div>
+  <div class="rotate" id="rotate"><div>⟳<br>Turn your phone sideways<br><small>the wrist display is landscape</small></div></div>
+</div>
+<script type="module" src="js/nav.js"></script>
+</body>
+</html>

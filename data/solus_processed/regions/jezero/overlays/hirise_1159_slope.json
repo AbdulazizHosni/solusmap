@@ -1,0 +1,105 @@
+{
+ "bounds": [
+  77.17376882,
+  18.35809,
+  77.28625944,
+  18.53334637
+ ],
+ "size_px": [
+  2494,
+  4096
+ ],
+ "cell_m": 2.536,
+ "dem_id": "hirise_1159",
+ "source": "MRO HiRISE DEM 1 m, set 1159 (esp_058996_1985_esp_058930_1985_tied-dem.tif), Day et al. 2023 (doi:10.17189/ervc-mr85)",
+ "slope_baseline_m": 5,
+ "downsampled": true,
+ "native_res_m": 1,
+ "legend": [
+  {
+   "label": "0\u20135\u00b0",
+   "min_deg": 0,
+   "max_deg": 5,
+   "rgba": [
+    252,
+    253,
+    191,
+    150
+   ],
+   "why_this_edge": "below the 5\u00b0 hazard-avoidance slope used for landing systems"
+  },
+  {
+   "label": "5\u201310\u00b0",
+   "min_deg": 5,
+   "max_deg": 10,
+   "rgba": [
+    254,
+    202,
+    141,
+    185
+   ],
+   "why_this_edge": "low to moderate slip expected on loose material (<10\u00b0)"
+  },
+  {
+   "label": "10\u201315\u00b0",
+   "min_deg": 10,
+   "max_deg": 15,
+   "rgba": [
+    253,
+    150,
+    104,
+    205
+   ],
+   "why_this_edge": "slip rises sharply on loose material (10\u201317\u00b0)"
+  },
+  {
+   "label": "15\u201320\u00b0",
+   "min_deg": 15,
+   "max_deg": 20,
+   "rgba": [
+    241,
+    96,
+    93,
+    215
+   ],
+   "why_this_edge": "upper end of slopes Apollo crews walked; near the 20\u00b0 suit requirement"
+  },
+  {
+   "label": "20\u201325\u00b0",
+   "min_deg": 20,
+   "max_deg": 25,
+   "rgba": [
+    205,
+    64,
+    113,
+    225
+   ],
+   "why_this_edge": "at or above the 20\u00b0 EVA suit requirement; near the Apollo rover design maximum (25\u00b0)"
+  },
+  {
+   "label": "25\u201330\u00b0",
+   "min_deg": 25,
+   "max_deg": 30,
+   "rgba": [
+    140,
+    41,
+    129,
+    235
+   ],
+   "why_this_edge": "above the Apollo rover design maximum; below the 30\u00b0 Mars rover operating limit"
+  },
+  {
+   "label": "30\u00b0+",
+   "min_deg": 30,
+   "max_deg": 90,
+   "rgba": [
+    59,
+    15,
+    112,
+    245
+   ],
+   "why_this_edge": "above the 30\u00b0 operating tilt limit of NASA Mars rovers"
+  }
+ ],
+ "note": "display only. Horn 3x3 slope at a 5 m baseline (DEM block-averaged from 1 m to 5 m, no filling); each overlay pixel (2.5 m) shows the class of its nearest slope value. Slope at a 5 m baseline is not the same quantity as slope at another baseline. Class edges match manifest.severity_classes; approved thresholds are in manifest.thresholds. Transparent = no slope value."
+}
